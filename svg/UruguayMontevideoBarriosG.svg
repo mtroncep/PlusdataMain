@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="MontevideoG" class="localidad" inkscape:label="Montevideo G" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" sodipodi:docname="UruguayMontevideoBarriosG.svg" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="0.99999999" inkscape:cx="287" inkscape:cy="372.5" inkscape:current-layer="MontevideoG" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <g id="zonas" style="cursor:pointer;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="G1" inkscape:label="Belvedere" class="barrio" style="fill:#b400fa" d="m 455.6,617.5 -0.2,-11.3 6.5,-9.7 -39.1,-25 -2.2,13.6 -13.1,-7.4 -3.5,4.4 z">
+      <title id="title3-8">Belvedere</title>
+    </path>
+    <path id="G2" inkscape:label="Nuevo Paris" class="barrio" style="fill:#fff376" d="m 422.8,571.5 -2.2,13.6 -13.1,-7.4 -3.5,4.4 -64.3,-47.9 11.8,-12.5 45.2,31.4 z">
+      <title id="title4-8">Nuevo Paris</title>
+    </path>
+    <path id="G7" inkscape:label="Sayago" class="barrio" style="fill:lime" d="m 461.9,596.5 -39.1,-25 2.4,-23.2 2.3,-21.1 -10.8,-6.6 6.1,-9.7 -2.3,-8.2 6.6,-9.7 9.3,8.5 v 14.4 l 6,6.5 -2.3,11.5 11.9,8.3 10,-8.3 32.6,24 -1.5,17.5 -5.6,8.9 -13.4,-5.7 -8.1,7.8 z">
+      <title id="title5-2">Sayago</title>
+    </path>
+    <path id="G6" inkscape:label="Peñarol" class="barrio" style="fill:#fdcd03" d="m 493,575.4 1.5,-17.5 -32.6,-24 -10,8.3 -11.9,-8.3 2.3,-11.5 -6,-6.5 v -14.4 l -9.3,-8.5 0.4,-23.9 24.7,18 7.4,-15.9 4.9,-12.8 40.6,25.5 12.3,-20.2 -22.7,-17.2 17.3,-14.3 18.8,-0.4 13.9,7.3 3.1,4.8 -5.6,9.6 6.9,6.1 2.1,5.4 -7.4,3.8 0.6,13.5 -4.9,3.8 0.5,3.8 -3,3.8 0.5,4.6 -0.9,6.5 7.8,7.7 -3.5,12.6 -41,55 z">
+      <title id="title6-4">Peñarol</title>
+    </path>
+    <path id="G8" inkscape:label="Colón Sureste - Abayubá" class="barrio" style="fill:#1dcbf5" d="m 544.7,439.1 -13.9,-7.3 -18.8,0.4 -17.3,14.3 22.7,17.2 -12.3,20.2 -40.6,-25.5 -4.9,12.8 -7.4,15.9 -24.7,-17.6 -6.5,-103.5 -5.8,-3 0.3,-20.8 -6.1,-18.1 -3.1,-23.6 1.5,-8.4 6.9,-1.1 3.4,-4.2 5.7,-3.5 2,-11.6 6.2,-9.9 0.9,-16.6 8,-9.4 3.1,-13.5 7.6,-8.6 4.1,-8.8 -0.1,-10.3 16.8,-11.2 1.4,-15.1 3.1,-14.1 2.7,-10.5 8.7,-9.3 8.4,-5.2 12.5,-4.8 6,-9.6 11.9,-9.5 18,6.4 6.7,-5.2 14.7,-5.6 13.6,-3.4 4.4,18.3 3.3,27.1 10.5,7.9 -4.4,6.3 9.9,7.9 -13.9,52.9 -9.9,6.6 -5.3,11.6 -10.5,4.3 -0.7,6.6 6.4,4.4 1.4,8.4 -3.3,5.4 2.9,3.8 -1.8,3.9 -8.6,0.8 -4.1,-2.4 -8.1,3.1 -5.8,2.7 -10.9,-4.5 -3.3,-3.9 -5.6,6.2 -1.3,5.7 -5.3,2.7 4.3,9.9 13.9,14.8 0.4,9.1 -6.2,7.4 -4.6,20.6 2.4,11.2 -0.4,16.5 -1.3,10.3 18.1,19 2.2,7.4 v 5.8 l -3.9,10.8 6.8,7.2 z">
+      <title id="title7-5">Colón Sureste - Abayubá</title>
+    </path>
+    <path id="G9" inkscape:label="Villa Colón" class="barrio" style="fill:#caaaf6" d="m 409.5,324 6.1,18.1 -0.3,20.8 5.8,3 6.5,103.5 -0.4,23.5 -33.1,-20.8 -8.6,12.8 -28.2,-17.7 9,-12.2 0.3,-13 -8.7,-17.9 3.9,-5.8 0.8,-10.1 3.3,-8.2 3.1,-10.6 4.8,-15.4 V 360.1 l 4.8,-7.5 15.7,-10.1 -8,-7.1 z">
+      <title id="title8-5">Villa Colón</title>
+    </path>
+    <path id="G20" inkscape:label="Sayago Norte" class="barrio" style="fill:#dbffe4" d="m 396.7,553 20,-32.4 10.8,6.6 -4.8,44.3 z">
+      <title id="title49">Sayago Norte</title>
+    </path>
+    <path id="G5" inkscape:label="Conciliación" class="barrio" style="fill:#e500ce" d="m 339.7,534.1 11.8,-12.5 45.2,31.4 20,-32.4 6.1,-9.7 -2.3,-8.2 6.6,-9.7 -33.1,-20.8 -8.6,12.8 -28.2,-17.7 v 0 l -0.6,14.4 -7.7,12.1 -8.9,-7.2 -7.5,-2 -9.4,3.7 -16.9,-0.4 -2.6,14.8 -13.2,8.7 v 0 l 16,17.3 12.3,-11.9 z">
+      <title id="title10-1">Conciliación</title>
+    </path>
+    <path id="G12" inkscape:label="Lavalleja" class="barrio" style="fill:#fc09fe" d="m 555.3,536.9 -4,14.7 6.1,12 -1.6,7.3 -3.9,-0.4 2.1,4.3 -10.7,13.2 0.1,9.4 -10.5,13.2 -2.7,-4 -4.5,-2.5 -4.5,-0.3 -4.5,4.1 -13.2,-11.3 3.1,-11.9 -6.8,-4.7 41,-55 7.2,1.9 z">
+      <title id="title43">Lavalleja</title>
+    </path>
+    <path id="G10" inkscape:label="Melilla" class="barrio" style="fill:#a2fbd8" d="m 306.1,487.9 -2.6,14.8 -13.2,8.7 -3.5,-24.2 -19.4,5.4 -48.4,-28.5 -77.2,-60.6 4.2,-9.9 -15.1,-1.9 -22.4,-42 0.9,-20.4 -60.8,16.1 -20.9,5.8 -6.8,-1.9 7.8,-9.8 4.8,-8.8 3.9,-5.8 -1.8,-17.3 -11,-25 8.3,-20.2 8.2,-5.8 5.9,-7.4 0.1,-6.9 4.7,-6.8 -2.1,-12.1 3.7,-5.5 0.2,-4.9 -8.1,-7.9 0.6,-5.5 4.5,-5.4 -0.4,-5.5 -7.5,-9.6 -11.9,-7.9 2.6,-5.8 -1.8,-4.6 -2,-7.2 4.7,-4.6 -4.9,-1.8 1.5,-6.2 -8,0.3 -1.1,-4.9 -4.6,0.1 -1.8,-4.3 -9.6,0.1 1.3,-7.8 5.1,-5.3 12.8,-7 0.1,-12.1 4.9,-0.9 5.8,-9.2 3.6,-11.5 4.7,-2.1 4.7,2.5 9.8,10.9 6.6,-10.1 14.5,-10 2.9,-8 6.6,-9.9 -1.1,-7.9 5.9,-5.1 37,-2.9 6,10.8 9.4,-7.6 4.1,3.8 -2.2,8.8 9.4,2.3 15.6,10.5 14.7,20 0.4,7.8 3.2,6.5 9.5,2.5 9.8,-0.7 7.4,6.2 -3.1,6.5 9.3,6.9 6.4,1.4 3.6,3.4 1,5.7 5.5,4.2 -0.1,7.9 1.8,5 2.2,11.4 3.7,5 -0.9,8.2 0.7,7 8,-0.8 7.1,3 4.9,7.5 -2.9,10.7 -4.9,5.8 12.3,20.4 20.8,9.3 25.4,4.8 26.8,19.2 11.4,6.9 8,2.9 1.4,7.7 7.2,-0.7 13.6,6.7 7.5,16.9 11.4,0.7 3.1,23.6 -23.3,11.3 8,7.1 -15.7,10.1 -4.8,7.5 -101.1,93.4 z">
+      <title id="title9-7">Melilla</title>
+    </path>
+    <path id="G3" inkscape:label="Paso de las Duranas" class="barrio" style="fill:#fb7a8f" d="m 455.6,617.5 -0.2,-11.3 6.5,-9.7 4.1,-10.1 8.1,-7.8 13.4,5.7 5.6,-8.9 6.8,4.7 6.8,4.7 -3.1,11.9 13.2,11.3 -0.8,8 -4.5,9.5 -6.1,1.8 -6.3,1.9 -2.1,4.6 -3.7,3 -6.9,2.1 z">
+      <title id="title2-1">Paso de las Duranas</title>
+    </path>
+    <path id="G11" inkscape:label="Lezica" class="barrio" style="fill:#6da9ff" d="m 373.6,360.1 0,14 -4.8,15.4 -3.1,10.6 -3.3,8.2 -0.8,10.1 -3.9,5.8 8.7,17.9 -0.3,13 -9,12.2 v 0 l -0.6,14.4 -7.7,12.1 -8.9,-7.2 -7.5,-2 -9.4,3.7 -16.9,-0.4 -33.6,-34.3 z">
+      <title id="title31">Lezica</title>
+    </path>
+  </g>
+  <g id="textos" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <text x="256.07001" y="343.31427" id="text1">Melilla</text>
+    <text x="323.57001" y="460.06427" id="text2">Lezica</text>
+    <text x="365.32001" y="514.56427" id="text3">Conciliación</text>
+    <text x="495.57001" y="519.56427" id="text4">Peñarol</text>
+    <text x="458.48422" y="567.25146" id="text5">Sayago</text>
+    <text x="548.97308" y="570.36786" id="text6">Lavalleja</text>
+    <text x="331.35538" y="586.75018" id="text7">Sayago Norte</text>
+    <text x="349.89005" y="557.36975" id="text8">Nuevo Paris</text>
+    <text x="422.8121" y="601.17053" id="text9">Belvedere</text>
+    <text x="500.0621" y="627.42053" id="text10">Paso de las Duranas</text>
+    <path id="flecha" style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none" d="m 409.8,545.1 1.4,1.3 1.4,1.3 0.4,-1.9 0.4,-1.9 -1.8,0.5 z m -27.5,34.7 -1.4,-1.3 -1.4,-1.3 -0.4,1.9 -0.4,1.9 1.8,-0.5 z m 29.1,-33.4 -30.3,32.2" />
+    <text x="395.42593" y="419.27963" id="text11">Villa</text>
+    <text x="395.20892" y="433.65463" id="text12">Colón</text>
+    <text x="472.41226" y="360.64203" id="text13">Colón Sureste</text>
+    <text x="472.97928" y="375.60217" id="text14">Abayubá</text>
+    <rect width="151.17729" height="32.400867" x="422.08008" y="32.036564" ry="11.197709" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:white;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.20175;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" id="rect" />
+    <text x="496.83923" y="54.106499" id="text01" style="font-size:21px">Municipio G</text>
+  </g>
+</svg>

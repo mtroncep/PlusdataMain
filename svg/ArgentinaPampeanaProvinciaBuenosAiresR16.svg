@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 610 675" id="Región 16" class="comarca" inkscape:label="Región 16" sodipodi:docname="ArgentinaPampeanaProvinciaBuenosAiresR16.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 5 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+
+  <g id="zonas" />
+  <path id="R16-1" inkscape:label="Carlos Tejedor" class="municipio zonas" d="m 314.5,192.3 -15.7,15.2 7.5,7.4 -5.7,5.3 -7.6,-7.4 -41.5,39.8 6.9,6.7 -6.5,6.3 10.5,10.5 -5.4,5 14,13.9 4.8,-4.2 21.3,20.1 -1.7,1.7 15.8,15.3 45.4,43.6 0.4,-0.9 16.9,16.1 53.1,-49.1 -6.9,-6.8 16.3,-15 13.7,13 19.1,-18 -71.5,-69.3 3.5,-3.4 -13.7,-13.4 -3,2.8 -39.1,-37.5 -17.3,16.1 z" />
+  <path id="R16-2" inkscape:label="Tres Lomas" class="municipio zonas" d="m 241.1,504.5 28.3,27 -0.3,0.8 38.5,35.6 6.1,19.1 -44,40.5 -27.4,-26 -1.3,1.8 -41,-39.1 17.5,-16.1 -4.2,-3.4 8.3,-8 -2.9,-3 8.5,-8.2 0.7,0.3 9.3,-8.6 -4.7,-4.3 z" />
+  <path id="R16-3" inkscape:label="Salliqueló" class="municipio zonas" d="m 200.5,565.1 40.3,38.2 1.3,-1.8 27.4,26 -35.9,35.2 -67.8,-64.6 z" />
+  <path id="R16-4" inkscape:label="Pellegrini" class="municipio zonas" d="m 165.9,598.2 34.6,-33.1 -0.7,-0.9 17.5,-16.1 -4.2,-3.4 8.3,-8 -2.9,-3 8.5,-8.2 0.7,0.3 9.3,-8.6 -4.7,-4.3 8.8,-8.5 -56.6,-54.7 -1.4,1.3 -42.3,-39.1 V 572.6 l 12.3,11 -1.1,1.2 z" />
+  <path id="R16-5" inkscape:label="Trenque Lauquen" class="municipio zonas" d="m 313.6,587 45.4,-40.7 -1.8,-1.8 46.3,-41.1 1.4,1.4 26.1,-23.5 -78.6,-75 21.4,-19.6 -16.9,-16.1 -0.4,0.9 -45.4,-43.6 -67.4,62.2 2,2.2 -61.3,57.6 56.6,54.7 28.3,27 -0.3,0.8 38.5,35.6 z" />
+  <path id="R16-6" inkscape:label="Rivadavia" class="municipio zonas" d="m 184.5,449.8 61.3,-57.6 -2,-2.2 67.4,-62.2 -15.8,-15.3 1.7,-1.7 -21.3,-20.1 -4.8,4.2 -14,-13.9 5.4,-5 -10.5,-10.5 6.5,-6.3 -6.9,-6.7 -15.3,14.6 -33.5,-32.2 5.3,-5.6 -9.9,-9.7 -21,20.5 4.8,4.9 -15.8,14.6 -4.9,-4.4 -9,8.6 3.7,6.2 -15.1,13 v 128.9 l 42.3,39.1 z" />
+  <path id="R16-7" inkscape:label="General Villegas" class="municipio zonas" d="M 140.8,28.3 V 283.2 l 15.1,-13 -3.7,-6.2 9,-8.6 4.9,4.4 15.8,-14.6 -4.8,-4.9 21,-20.5 9.9,9.7 -5.3,5.6 33.5,32.2 15.3,-14.6 41.5,-39.8 7.6,7.4 5.7,-5.3 -7.5,-7.4 15.7,-15.2 -6.7,-6.7 7,-0.8 -1,-27 -1.3,0.3 -1.2,-65.4 9,-5.1 51.3,10 3.9,-24.2 3.5,0.1 10,-45 z" />
+  <g id="textos" >
+    <rect id="rect" width="114.6444" height="29.039326" x="475.07733" y="15.077335" ry="10.035963" class="rectangulos" />
+    <text x="226.58615" y="122.10622" id="tooltipR16-7" class="textos21 tooltip tooltipR16-7">General Villegas</text>
+    <text x="361.02454" y="275.3334" id="tooltipR16-1" class="textos21 tooltip tooltipR16-1">Carlosejedor</text>
+    <text x="212.43205" y="342.90128" id="tooltipR16-6" class="textos21 tooltip tooltipR16-6">Rivadavia</text>
+    <text x="310.302" y="442.11774" id="tooltipR16-5" class="textos21 tooltip tooltipR16-5">Trenque Lauquen</text>
+    <text x="167.73294" y="517.03381" id="tooltipR16-4" class="textos21 tooltip tooltipR16-4">Pellegrini</text>
+    <text x="267.86737" y="567.4541" id="tooltipR16-3" class="textos21 tooltip tooltipR16-3">Tres Lomas</text>
+    <text x="200.58713" y="631.17072" id="tooltipR16-2" class="textos21 tooltip tooltipR16-2">Salliqueló</text>
+    <text x="531.91962" y="35.570339" id="textR" class="textos21">Región 16</text>
+  </g>
+</svg>

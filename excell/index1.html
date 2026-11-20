@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla dinámica con Handsontable</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/handsontable.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+</head>
+<body> 
+  <div id="tabla"></div>
+
+<script>
+    // Cargar datos desde PHP
+    const container = document.querySelector('#tabla');
+
+const hot = new Handsontable(container, {
+  // theme name with obligatory ht-theme-* prefix
+  themeName: 'ht-theme-main-dark-auto',
+  // other options
+  data: [
+    ['', 'Tesla', 'Volvo', 'Toyota', 'Ford'],
+    ['2019', 10, 11, 12, 13],
+    ['2020', 20, 11, 14, 13],
+    ['2021', 30, 15, 12, 13]
+  ],
+  rowHeaders: true,
+  colHeaders: true,
+  height: 'auto',
+  autoWrapRow: true,
+  autoWrapCol: true,
+  licenseKey: 'non-commercial-and-evaluation' // for non-commercial use only
+});
+</script>
+</body>
+</html>

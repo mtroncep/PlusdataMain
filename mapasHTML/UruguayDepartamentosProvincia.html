@@ -1,0 +1,110 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Toda Argentina</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="content-language" content="es" />
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <body>
+        <!-- Contenedor donde se insertará el SVG -->
+        <div id="contenedor-svg"></div>
+
+    <script>
+        fetch("../svg/UruguayDepartamentosProvincia.svg")
+            .then(r => r.text())
+            .then(svg => {
+                document.getElementById("contenedor-svg").innerHTML = svg;
+
+                const nodos = document.querySelectorAll("[onclick]");
+
+                nodos.forEach(n => {
+                    let code = n.getAttribute("onclick");
+
+                    // Si el onclick apunta a un archivo .svg sin path
+                    if (code.includes(".svg") && !code.includes("/")) {
+
+                        const archivo = code.match(/'(.*?)'/)[1];
+
+                        // Sacar el .svg → dejar solo el nombre base
+                        const base = archivo.replace(".svg", "");
+
+                        // Reemplazar por la ruta correcta → mapasHTML/<archivo>.html
+                        const nuevo = code.replace(
+                            archivo, base + ".html"
+                        );
+
+                        n.setAttribute("onclick", nuevo);
+                    }
+                });
+
+                inicializarProvincias();
+            });
+        
+            function inicializarProvincias() {
+                var test = document.querySelectorAll(".provincia");
+
+                for (var i = 0; i < test.length; i++) {
+//                    console.log("Test provincia: " + test[i]);
+
+                    test[i].addEventListener("click", function() {
+                        let nodo = this;
+
+                        // Si el nodo clickeado no tiene el label, subo al padre
+                        if (!nodo.hasAttribute("inkscape:label")) {
+                            nodo = nodo.parentNode;
+                        }
+
+                        var provincia = this;
+                        var nombreProvincia = provincia.getAttribute('inkscape:label');
+                        if (nombreProvincia != null){
+                            console.log("Provincia detectada desde Provincias:", nombreProvincia);
+
+                            var parametros = { provincia: nombreProvincia };
+
+                            $.ajax({
+                                async: false,
+                                url: 'SVG_Provincias_AJAX.php',
+                                data: parametros,
+                                beforeSend: function(objeto) {},
+                                success: function(data) {
+                                    enviarDato(data);
+                                }
+                            });
+/*
+                            if (nombreProvincia == 'Montevideo'){
+                                let nombreComarca = "Comarca Única";
+                                $.ajax({
+                                    async: false,
+                                    url: 'SVG_Comarcas_AJAX.php',
+                                    data: { comarca: nombreComarca },
+                                    success: function(data) {
+                                        console.log("***Comarca única*** " + data);
+                                        enviarDatoComarca(data);
+                                    }
+                                });
+                                
+                            }
+*/
+                        }
+                    });
+                }
+            }
+
+            function enviarDato(provincia) {
+                var datoParaEnviar = "ubic_provincia_id;" + provincia;
+                window.parent.postMessage(datoParaEnviar, "*");
+            }
+        
+            function enviarDatoComarca(codigo) {
+                var datoParaEnviar = "ubic_comarca_id;" + codigo;
+                window.parent.postMessage(datoParaEnviar, "*");
+            }
+
+    </script>
+
+    </body>
+</html>

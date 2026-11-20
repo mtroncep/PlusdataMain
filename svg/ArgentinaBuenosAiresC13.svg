@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg viewBox="0 0 800 675" id="Comuna 13" inkscape:label="Comuna 13" class="localidad" preserveAspectRatio="xMidYMid meet" sodipodi:docname="ArgentinaBuenosAiresC13.svg" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 9 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+  <path id="C13" inkscape:label="Núñez" class="barrio zonas" d="m 442.18976,104.50982 -8.16366,-10.311993 5.90791,-8.05625 -7.30433,-2.148332 -8.05625,10.204582 1.82609,11.600993 -19.12016,17.72375 -4.61892,9.34525 -21.05366,-15.68283 -4.5115,-8.59333 7.19692,-10.849083 -12.67516,-8.3785 -27.60608,16.756993 -3.65216,-3.97441 16.54216,-12.460333 -4.83375,-15.038329 0.32225,-11.493584 -3.65217,-12.030662 -9.45266,-0.537084 -59.18656,12.567746 -112.57263,64.342566 75.40647,118.37313 -61.97939,41.46282 8.05624,11.92325 44.25565,65.30931 155.0022,-102.6903 -5.69308,-12.03066 0.75192,-10.9565 42.96665,-71.64689 z" />
+  <text x="305.67007" y="212.16121" id="textC13" class="textos21 tooltip tooltipC13">Núñez</text>
+  <path id="C13-1" inkscape:label="Belgrano" class="barrio zonas" d="m 433.16677,472.94887 12.67516,-16.43475 46.61882,-33.6214 14.60866,-18.90533 61.01264,4.94117 13.31967,-11.81583 -29.32474,1.71866 -19.87208,-2.578 -15.14575,-9.45266 -8.05624,-12.46033 2.578,-24.92066 19.65724,-6.44499 17.29408,-11.06392 12.03066,-15.03833 19.97949,-12.46033 -9.56008,-4.51149 20.51658,-16.32733 19.12016,-11.27875 21.80558,-6.12275 -9.023,-11.38616 -5.58567,-25.02807 -0.53708,-24.38358 v -12.99741 l -19.97949,-21.80558 -18.58308,-10.41941 -19.12016,-2.14833 -22.98716,-9.98975 -14.17899,-15.14574 -7.30434,0.53708 -2.36316,-8.91558 -3.2225,-12.89 -14.50125,-16.327333 -34.2659,-8.91558 -18.58308,18.153413 -15.89766,62.83873 -42.96665,71.6469 -0.75192,10.95649 5.69308,12.03067 -155.0022,102.69029 19.9795,29.43216 -3.2225,6.33758 2.04092,6.87467 -62.51648,50.70065 50.27098,73.04331 11.49358,-7.41175 40.38865,32.43982 54.35282,-64.87964 50.27098,-38.34774 z" />
+  <text x="406.46365" y="366.97403" id="textC13-1" class="textos21 tooltip tooltipC13-1">Belgrano</text>
+  <path id="C13-2" inkscape:label="Colegiales" class="barrio zonas" d="m 396.10803,452.75454 -50.27099,38.34774 -54.35281,64.87964 32.54724,43.61116 67.35023,15.46799 82.28114,44.68532 7.84141,-19.22758 38.1329,-38.7774 -16.00507,-13.21225 -3.54475,-6.01533 -19.44241,-21.48332 32.76207,-37.70324 -80.24022,-50.3784 z" />
+  <text x="401.78467" y="563.86475" id="textC13-2" class="textos21 tooltip tooltipC13-2">Colegiales</text>
+  <rect width="131.81653" height="31.070131" x="497.57538" y="15.17614" ry="10.737809" id="rect" class="rectangulos" />
+  <text x="563.60095" y="38.16721" id="textR" class="textos21">Comuna 13</text>
+</svg>

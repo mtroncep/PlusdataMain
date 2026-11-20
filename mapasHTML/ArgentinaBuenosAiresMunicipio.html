@@ -1,0 +1,126 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Toda Argentina</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="content-language" content="es" />
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <body>
+        <!-- Contenedor donde se insertará el SVG -->
+        <div id="contenedor-svg"></div>
+
+    <script>
+            fetch("../svg/ArgentinaBuenosAiresMunicipio.svg")
+                .then(r => r.text())
+                .then(svg => {
+                    document.getElementById("contenedor-svg").innerHTML = svg;
+//            });
+
+            // 🔥 2) LIMPIAR ONCLICKs FANTASMA DEL SVG
+            document.querySelectorAll("g, path, rect, polygon").forEach(el => {
+                const code = el.getAttribute("onclick");
+                if (code && !el.classList.contains("localidad")) {
+                    el.setAttribute("onclick", "");
+                }
+            });
+
+            // 🔥 3) RENOMBRAR .svg → .html EN TODOS LOS ONCLICK REALES
+            const nodos = document.querySelectorAll("[onclick]");
+            nodos.forEach(n => {
+                let code = n.getAttribute("onclick");
+
+                if (code && code.includes(".svg") && !code.includes("/")) {
+                    const archivo = code.match(/'(.*?)'/)[1];
+                    const base = archivo.replace(".svg", "");
+                    const nuevo = code.replace(archivo, base + ".html");
+                    n.setAttribute("onclick", nuevo);
+                }
+            });
+    
+            var test = document.querySelectorAll('.localidad');
+
+            for (var i = 0; i < test.length; i++) {
+
+                test[i].addEventListener("click", function(e) {
+                    e.stopPropagation();
+
+                    var nodo = document.getElementById(this.id);
+                    var nombreComarca = nodo.getElementsByTagName('title')[0].textContent;
+
+                    // Si querés recortar después del guion, lo dejo igual:
+                    // nombreComarca = nombreComarca.substr(nombreComarca.indexOf('-') + 2, 50);
+
+                    var parametros = { "localidad": nombreComarca };
+
+                    $.ajax({
+                        async: false,
+                        url: 'SVG_Localidades_AJAX.php',
+                        data: parametros,
+                        success: function(data) {
+                            enviarDato(data);
+                        }
+                    });
+                });
+            }
+
+            // 🔥 5) EJECUTAR SECUENCIA AUTOMÁTICA SI EXISTE svg1
+            var el = document.getElementById("svg1");
+            console.log("el: " + el);
+            var estaCompleto = '';
+            var estaCompleto = el.getAttribute('inkscape:label');
+            console.log("Comunas CABA: " + estaCompleto);
+
+            if (estaCompleto !== null) {
+//                console.log("Comunas CABA: " + estaCompleto);
+                ejecutarFuncionesEnSecuencia();
+            };
+        });
+
+
+        // 🔥 6) FUNCIÓN AJAX MODERNA (fetch)
+        async function hacerSolicitud(url, params, posSelect) {
+            try {
+                const response = await fetch(url + '?' + new URLSearchParams(params));
+                if (!response.ok) throw new Error('Error en la solicitud: ' + response.statusText);
+
+                const valorObtenido = await response.text();
+                var datoParaEnviar = posSelect + ";" + valorObtenido;
+
+                console.log("Envio a dominio principal:", datoParaEnviar);
+                window.parent.postMessage(datoParaEnviar, window.location.origin);
+
+                return valorObtenido;
+
+            } catch (error) {
+                console.error('Error en hacerSolicitud:', error);
+            }
+        }
+
+
+        // 🔥 7) SECUENCIA AUTOMÁTICA (solo municipios en este caso)
+        function ejecutarFuncionesEnSecuencia() {
+            hacerSolicitud(
+                'SVG_Municipios_AJAX.php',
+                { municipio: 'Municipio' },
+                'ubic_municipio_id'
+            )
+            .then(resultado => console.log("Resultado 1:", resultado))
+            .catch(error => console.error("Error:", error));
+        }
+
+
+        // 🔥 8) ENVÍO DE DATOS AL PADRE
+        function enviarDato(localidad) {
+            window.parent.postMessage("ubic_localidad_id;" + localidad, window.location.origin);
+        }
+
+        function enviarDatoProvincia(region) {
+            window.parent.postMessage("ubic_provincia_id;" + region, window.location.origin);
+        }
+</script>
+    </body>
+</html>

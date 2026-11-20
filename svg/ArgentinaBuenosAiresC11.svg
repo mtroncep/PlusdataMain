@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg viewBox="0 0 800 675" id="Comuna 11" inkscape:label="Comuna 11" class="localidad" sodipodi:docname="ArgentinaBuenosAiresC11.svg" preserveAspectRatio="xMidYMid meet" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 9 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+  <path id="C11-3" inkscape:label="Villa General Mitre" class="barrio zonas" d="m 625.43742,545.31509 109.16381,-62.7187 -28.62729,-70.67734 38.72405,-34.56656 -99.77976,-30.88421 -52.85952,29.57757 -31.35935,24.4698 -32.07207,7.24591 z" />
+  <text x="641.12329" y="424.09125" id="tooltipC11-3" class="textos21 tooltip tooltipC11-3">Villa</text>
+  <text x="641.01831" y="447.57236" id="tooltipC11-31" class="textos21 tooltip tooltipC11-3">General</text>
+  <text x="639.68481" y="471.47305" id="tooltipC11-311" class="textos21 tooltip tooltipC11-3">Mitre</text>
+  <path id="C11-2" inkscape:label="Villa Santa Rita" class="barrio zonas" d="m 445.95263,436.864 82.43709,-28.74608 97.0477,137.31596 -62.48114,35.8732 -53.45344,30.76543 -99.66098,-91.58357 -23.28195,-21.14381 z" />
+  <text x="513.83575" y="492.90921" id="tooltipC11-2" class="textos21 tooltip tooltipC11-2">Villa</text>
+  <text x="513.59424" y="515.7464" id="tooltipC11-21" class="textos21 tooltip tooltipC11-2">Santa</text>
+  <text x="512.90125" y="539.53528" id="tooltipC11-211" class="textos21 tooltip tooltipC11-2">Rita</text>
+  <path id="C11-1" inkscape:label="Villa del Parque" class="barrio zonas" d="m 380.85821,493.0495 -45.85117,-63.43142 -58.79879,-83.74373 89.92057,-71.98397 132.56454,11.4034 51.07774,24.82616 16.86753,5.7017 -8.07741,7.00834 33.49749,53.09709 v 0 l -31.35935,24.4698 -32.19085,7.36469 -82.55588,28.86486 -59.39272,62.36236 z" />
+  <text x="434.76077" y="365.10849" id="tooltipC11-1" class="textos21 tooltip tooltipC11-1">Villa del Parque</text>
+  <path id="C11" inkscape:label="Villa Devoto" class="barrio zonas" d="M 335.12582,429.73687 212.1829,521.32044 173.69642,563.01412 55.148558,453.1376 187.95067,98.325509 301.98469,245.02552 l 8.55255,8.1962 55.82915,20.90623 -89.92057,71.98398 z" />
+  <text x="186.23392" y="403.39758" id="tooltipC11" class="textos21 tooltip tooltipC11">Villa Devoto</text>
+  <rect width="131.81653" height="31.070131" x="558.3689" y="62.767048" ry="10.737809" id="rect" class="rectangulos" />
+  <text x="624.39441" y="85.758125" id="textR" class="textos21">Comuna 11</text>
+</svg>

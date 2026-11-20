@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="Andorra03" class="comarca" inkscape:label="Comarca Única" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" sodipodi:docname="AndorraParroquias2.svg" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="1.0179639" inkscape:cx="306.49417" inkscape:cy="421.92066" inkscape:current-layer="zonas" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <style id="estilomapasamarillo">
+.zonas {
+  cursor:pointer;
+  fill:#f8f593;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.30;
+}
+.zonagris {
+  cursor:pointer;
+  fill: #c5bfc4;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.30;
+}
+.textos21 {
+  cursor:pointer;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:21px;
+  font-family:Montserrat,sans-serif;
+  text-align:center;
+  writing-mode:lr-tb;
+  direction:ltr;
+  text-anchor:middle;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-width:0.03;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-dasharray:none;
+}
+.textos14 {
+  cursor:pointer;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:14px;
+  font-family:Montserrat,sans-serif;
+  text-align:center;
+  writing-mode:lr-tb;
+  direction:ltr;
+  text-anchor:middle;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-width:0.03;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-dasharray:none;
+}
+.rectangulos {
+  cursor:pointer;
+  fill:white;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:black;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.3;
+}
+.flechas {
+  fill:black;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:black;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:1;
+}
+</style>
+  <g id="zonas" class="zonas">
+    <path id="path1" inkscape:label="Parroquia Ordino" class="municipio zonas" d="m 117.1,134.89521 21.9,-2.9 14.6,17.5 22.6,-4.4 12.4,-12 9.1,5.5 14.9,0.4 3.6,-8 17.1,-2.6 10.6,5.1 4.6,-2 12.9,11.8 6.2,-1.5 3.6,14.9 13.5,19 h 12.8 l 9.1,14.6 8,0.4 3.8,22.5 -7.7,-0.6 -9,5.2 -1.3,9 -27,17.4 -2.6,23.2 -13.5,12.2 4.5,6.4 v 32.8 l 8,32.4 -15.7,9.4 -25,1.3 -5.1,-2.2 -5.1,-2.2 -6.4,5.7 -9.6,-0.6 -14.7,-8.2 -3.8,-22.2 -16,-17.1 -7.7,-1.9 -13.5,-23.4 1.3,-29.8 -49.4,-26.7 10.2,-15.7 -4.7,-35.7 -2.9,-5.1 14.6,-19.7 z">
+      <title id="title1">Parroquia Ordino</title>
+    </path>
+    <path id="path2" inkscape:label="Parroquia La Massana" class="municipio zonas" d="m 98.9,233.29521 49.4,26.7 -1.3,29.8 13.5,23.4 7.7,1.9 16,17.1 3.8,22.2 14.7,8.2 9.6,0.6 6.4,-5.7 10.3,4.4 25,-1.3 -11.6,25.1 -7.7,2.6 -5.2,8.4 3.2,7.7 -8.9,4.3 -12.2,6 -8.2,-5.2 -16.2,7.5 -36.5,16.9 -15.2,-4.5 -18.4,10.9 -16.5,-0.6 -11.3,-27.1 -8.4,-11.3 -6.6,-27.7 -15.7,-8.4 h -8 l -9.5,10.2 -9.1,1.5 -16.8,6.9 -0.4,-11.7 7.3,-8.4 8,-27 32.4,-21.9 -2.9,-10.2 -8.7,-1.8 -17.5,-20.4 1.8,-10.6 16.8,-8 7.7,-15.3 -0.1,-9.9 10.1,3.7 7.7,-0.9 z">
+      <title id="title2">Parroquia La Massana</title>
+    </path>
+    <path id="path5" inkscape:label="Parroquia Encamp" class="municipio zonas" d="m 524.2,349.19521 -15.9,-2.2 -14.2,-3.2 -127.3,-29 -29.1,44.5 -25.4,5.2 -24.8,-3.9 -17.7,-9.4 -15.7,9.4 -11.6,25.1 -7.7,2.6 -5.2,8.4 3.2,7.7 -8.9,4.3 20.8,23.5 11.2,-13.2 13.8,-3.1 53.9,53 11.2,0.8 6.6,-7.8 65.1,21 3.3,-13.3 8.9,-22.2 14.9,24.3 27.7,0.4 9.1,6.9 25.1,-14.3 -0.3,-8.7 10.6,-2.6 -1.5,-35.4 3.3,2.2 8.4,-7.7 z">
+      <title id="title3">Parroquia Encamp</title>
+    </path>
+    <path id="path7" inkscape:label="Parroquia Canillo" class="municipio zonas" d="m 269.8,351.09521 -8,-32.4 v -32.8 l -4.5,-6.4 13.5,-12.2 2.6,-23.2 27,-17.4 1.3,-9 9,-5.2 7.7,0.6 -3.8,-22.5 5.8,-5.8 34.3,2.6 12.4,-7.3 26.6,8.7 2.6,10.2 14.2,5.8 19.3,-10.2 34.3,2.9 17.9,15.7 33.2,0.7 7.3,-7.3 2.6,14.6 -19.3,31.7 2.2,17.1 55.8,15.7 23.7,-1.1 14.9,16.6 -29.9,19.5 -20.4,-1.8 -11.8,7.7 -12.9,14.9 -2.9,7.7 -15.9,-2.2 -14.2,-3.2 -127.3,-29 -29.1,44.5 -25.4,5.2 -24.8,-3.9 z">
+      <title id="title4">Parroquia Canillo</title>
+    </path>
+    <path id="path4" inkscape:label="Parroquia Escaldes - Engordany" class="municipio zonas" d="m 187.2,416.99521 56,107.5 -10.9,13.8 14.4,8.8 h 11.7 l 15.3,19.3 h 5.1 l 6.9,-23.7 21.5,-15.7 13.5,8.7 20.6,-2.7 15.5,5.1 8.7,-10 21.9,1.8 11.3,-2.2 7.3,-11.7 1.6,-19.6 -1.5,-13.8 -65.1,-21 -6.6,7.8 -11.2,-0.8 -53.9,-53 -13.8,3.1 -11.2,13.2 -20.8,-23.5 -12.2,6 -8.2,-5.2 z">
+      <title id="title5">Parroquia Escaldes - Engordany</title>
+    </path>
+    <path id="path6" inkscape:label="Parroquia Andorra La Vella" class="municipio zonas" d="m 100.7,439.69521 16.5,0.6 18.4,-10.9 15.2,4.5 36.5,-16.9 56,107.5 -10.9,13.8 -45.3,-34.6 -50.3,-1.8 -50.3,-48.7 z">
+      <title id="title6">Parroquia Andorra La Vella</title>
+    </path>
+    <path id="path8" inkscape:label="Parroquia Sant Julià de Lòria" class="municipio zonas" d="m 86.6,453.19521 50.3,48.7 50.3,1.8 45.3,34.6 14.4,8.8 -2.9,6.9 1.8,9.1 -1.8,14.6 -8,4 -5.5,19 -18.6,-1.1 -19,8 -4.4,-3.3 -12,6.6 -8.7,-0.4 -18.2,-9.8 -27.7,0.7 -28.4,-5.5 -13.8,0.4 -14.6,-10.2 -3.6,-9.1 4.4,1.5 -7.3,-25.9 10.2,-7.7 -11.3,-10.9 1.5,-23.3 -13.1,-13.1 -24.8,-1.1 -13.5000004,-8.7 13.5000004,-13.5 40.5,-4 z">
+      <title id="title7">Parroquia Sant Julià de Lòria</title>
+    </path>
+  </g>
+  <g id="textos" class="textos21">
+    <rect width="210.45821" height="32.400867" x="366.23959" y="64.131775" ry="11.197709" id="rect" class="rectangulos" />
+    <text x="470.63922" y="86.201706" id="text01">Parroquias</text>
+    <text x="208.41696" y="251.52332" id="text1">Ordino</text>
+    <text x="377.93698" y="282.66241" id="text2">Canillo</text>
+    <text x="366.44492" y="401.56308" id="text3">Encamp</text>
+    <text x="307.04044" y="509.47736" id="text4">Engordany</text>
+    <text x="164.13437" y="488.21799" id="text5">La Vella</text>
+    <text x="143.81473" y="552.5708" id="text6">Sant Julià</text>
+    <text x="112.74543" y="352.47437" id="text7">La Massana</text>
+    <text x="165.08986" y="468.24152" id="text8">Andorra</text>
+    <text x="143.72021" y="572.72089" id="text9">de Lòria</text>
+    <text x="307.40793" y="489.58469" id="text10">Escaldes</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="Montevideo E" class="localidad" inkscape:label="Montevideo E" sodipodi:docname="UruguayMontevideoBarriosE.svg" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="2" inkscape:cx="422.25" inkscape:cy="-12.75" inkscape:current-layer="Montevideo E" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <g id="zonas" style="cursor:pointer;fill:#f8f593;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="E8" inkscape:label="Unión" class="barrio" d="m 94.5,274.8 34.1,-0.6 -12,56.6 -2.3,26.1 -43.2,6.1 -19.6,-0.4 -41.1,-31.2 z">
+      <title id="title25-1">Unión</title>
+    </path>
+    <path id="E7" inkscape:label="Malvín Norte" class="barrio" d="m 128.6,274.2 46.7,-10.4 20.7,30.7 v 42.5 l -11.7,5.1 h -26.6 l -41,-11.3 -0.4,-0.5 z">
+      <title id="title24-9">Malvín Norte</title>
+    </path>
+    <path id="E6" inkscape:label="La Cruz de Carrasco - Las Canteras" class="barrio" d="m 175.2,263.7 27,-6.5 19.8,1.1 44.4,7.8 24,23.8 -23.6,33.3 2.4,21.3 -23.9,8.7 -18.1,-22.8 -31.3,6.6 v -42.5 z">
+      <title id="title23-1">La Cruz de Carrasco - Las Canteras</title>
+    </path>
+    <path id="E4" inkscape:label="Malvín" class="barrio" d="m 157.6,342 h 26.6 l 11.7,-5.1 31.3,-6.6 18.1,22.8 23.9,-8.7 16.9,25.5 4.3,23.2 -0,23.6 -13,7.9 -17.6,0.9 -2.5,15.8 h -6.7 l -4.2,-9.3 -11.7,-5.6 -30.2,-0.9 -10.1,2.8 -2.5,7.4 -5.9,-5.6 -11.7,1.9 -13.7,-44.3 16.8,-5.4 -21.6,-20.6 z">
+      <title id="title22-2">Malvín</title>
+    </path>
+    <path id="E2" inkscape:label="Carrasco Norte" class="barrio" d="m 266.4,266.1 35.4,-2.1 54.6,-7.7 52.7,2.1 33.5,-27.6 13.9,15.5 23.5,5.6 12.6,-8.4 15.1,-4.6 9.2,5.6 h 9.2 l 5,7.4 v 7.4 0 l 8.4,3.5 1.7,13.1 -25.4,3.7 v 9.4 0 l -30.5,7.5 -7.2,-12.9 -26.7,-0.2 1.7,16.8 -20.5,-1.5 -14,14.7 -19.6,4.8 -3.6,-13.2 -66.8,26.6 -13.3,-17.4 -25.1,-24.4 z">
+      <title id="title20-3">Carrasco Norte</title>
+    </path>
+    <path id="E3" inkscape:label="Punta Gorda" class="barrio" d="m 328.8,331.7 8.1,22.7 107.5,62 -15.9,22.3 -8.4,4.6 h -13.4 l -7.6,-6.5 -4.2,5.6 -9.2,-0.9 -6.7,-9.3 -17.6,-2.8 v 0 l -13.4,14.9 h -10.9 l -0.8,-11.2 -13.4,-17.7 -15.1,2.8 -17.2,-1.4 v -23.6 0 l -4.3,-23.2 -16.9,-25.5 -2.4,-21.3 23.6,-33.3 25.1,24.4 z">
+      <title id="title21-8">Punta Gorda</title>
+    </path>
+    <path id="E1" inkscape:label="Carrasco" class="barrio" d="m 444.4,416.4 21.8,-20.5 21.8,-14.9 35.2,-24.5 39.4,-18.2 42.8,-25.1 -3.4,-5.6 -21.4,7.4 -5,-7.4 -7.6,0.9 -9.2,-4.6 -4.2,-14.9 -1.7,-14.9 -5,-9.3 -8.4,-2.1 1.7,13.1 -25.4,3.7 v 9.4 l -30.5,7.5 -7.2,-12.9 -26.7,-0.2 1.7,16.8 -20.5,-1.5 -14,14.7 -19.6,4.8 -3.6,-13.2 -66.8,26.6 8.1,22.7 z">
+      <title id="title19-0">Carrasco</title>
+    </path>
+    <path id="E15" inkscape:label="La Blanqueada" class="barrio" d="m 4.5,334.9 6,-3.5 41.1,31.2 -24.9,10.9 z">
+      <title id="title3-86">La Blanqueada</title>
+    </path>
+    <path id="E9" inkscape:label="Buceo" class="barrio" d="m 71.1,363 43.1,-6.2 2.4,-26.1 41,11.3 -1.8,19.8 21.6,20.6 -16.8,5.4 13.7,44.3 v 0 l -5.2,8.7 -34.7,-26.5 -26.5,-25.8 z">
+      <title id="title26-2">Buceo</title>
+    </path>
+  </g>
+  <g id="textos" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <rect width="151.17729" height="32.400867" x="422.08008" y="32.036564" ry="11.197709" style="fill:white" id="rect" />
+    <text x="496.83923" y="54.106499" id="text01" style="font-size:21px">Municipio E</text>
+    <text x="246.90439" y="229.78065" id="text17">La Cruz de Carrasco</text>
+    <text x="246.86938" y="243.66805" id="text28">Las Canteras</text>
+    <text x="160.16377" y="300.5791" id="text2">Malvín</text>
+    <text x="74.964027" y="329.69244" id="text3">Unión</text>
+    <text x="56.940163" y="405.67697" id="text4">La Blanqueada</text>
+    <text x="133.54729" y="381.79346" id="text5">Buceo</text>
+    <text x="159.82777" y="314.81732" id="text7">Norte</text>
+    <text x="351.52121" y="402.41351" id="text8">Punta Gorda</text>
+    <text x="378.39127" y="286.09445" id="text9">Carrasco Norte</text>
+    <text x="457.94077" y="349.38052" id="text13">Carrasco</text>
+    <text x="226.31989" y="392.4541" id="text14">Malvín</text>
+  </g>
+  <g id="flechas" style="cursor:pointer;display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="flecha" d="m 220.4,249.5 1.9,-0 1.9,-0 -1,-1.5 -1,-1.5 -0.8,1.6 z m 4,32.4 -1.9,0 -1.9,0 1,1.5 1,1.5 0.8,-1.6 z m -2,-32.5 0.4,32.4" />
+    <path id="flecha1" d="m 23.3,359.4 1.8,0.6 1.8,0.6 -0.5,-1.8 -0.5,-1.8 -1.3,1.3 z m -5.7,32.2 -1.8,-0.6 -1.8,-0.6 0.5,1.8 0.5,1.8 1.3,-1.3 z m 7.6,-31.7 -9.1,31.1" />
+  </g>
+</svg>

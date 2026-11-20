@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg viewBox="0 0 800 675" id="Comuna 14" inkscape:label="Comuna 14" class="localidad" sodipodi:docname="ArgentinaBuenosAiresC14.svg" preserveAspectRatio="xMidYMid meet" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 9 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+  <path id="C14" inkscape:label="Palermo" class="barrio zonas" d="m 178.01293,470.83181 7.9,-19.5 38.7,-39.4 -16.2,-13.4 -3.6,-6.1 -19.8,-21.8 33.3,-38.3 -81.5,-51.2 12.9,-16.7 47.3,-34.2 14.8,-19.2 62,5 13.6,-12 -29.8,1.7 -20.2,-2.7 -15.4,-9.6 -8.2,-12.7 2.6,-25.3 19.9,-6.5 17.6,-11.2 12.2,-15.3 20.2,-12.6 -9.7,-4.6 20.9,-16.600003 19.4,-11.5 22.2,-6.2 21.6,14.4 31,13.3 47,14.600003 27.9,8 26.3,15.7 30.5,24.1 32.4,38.7 17.2,24.7 18.6,31.4 19.5,28.5 28.1,29.7 -41.1,52 65.1,50.9 -41.7,74.2 -14.6,-11.4 h -45.9 l -81.9,127.4 -15.8,48 -64.5,-3.8 -53.3,-26.3 -101.1,-80.1 -67.5,-56.7 z" />
+  <text x="400.651" y="379.5047" id="textC14" class="textos21 tooltip tooltipC14">Palermo</text>
+  <rect width="131.81653" height="31.070131" x="531.39636" y="19.861666" ry="10.737809" id="rect" class="rectangulos" />
+  <text x="597.42194" y="42.852753" id="textR" class="textos21">Comuna 14</text>
+</svg>

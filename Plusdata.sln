@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Plusdata", "Plusdata.phpproj", "{1CAF3815-5740-4F47-90BC-D5110861DD63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CAF3815-5740-4F47-90BC-D5110861DD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CAF3815-5740-4F47-90BC-D5110861DD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CAF3815-5740-4F47-90BC-D5110861DD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CAF3815-5740-4F47-90BC-D5110861DD63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D20F708-E305-4ECD-8870-D1227E9BA82C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,131 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Toda Argentina</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-language" content="es" />
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<body>
+    <!-- Contenedor donde se insertará el SVG -->
+    <div id="contenedor-svg"></div>
+
+<script>
+fetch("../svg/UruguayDepartamentoLavalleja.svg")
+    .then(r => r.text())
+    .then(svg => {
+        document.getElementById("contenedor-svg").innerHTML = svg;
+
+        // ---------------------------------------------------------
+        // 1) DETECTAR COMARCA FIJA (class="comarca" + inkscape:label)
+        // ---------------------------------------------------------
+        const nodoComarcaFija = document.querySelector(".comarca");
+
+        if (nodoComarcaFija) {
+            const nombreComarca = nodoComarcaFija.getAttribute("inkscape:label");
+            console.log("Comarca fija detectada:", nombreComarca);
+
+            $.ajax({
+                async: false,
+                url: 'SVG_Comarcas_AJAX.php',
+                data: { comarca: nombreComarca },
+                success: function(data) {
+                    enviarDatoComarca(data);
+                }
+            });
+        }
+
+        // ---------------------------------------------------------
+        // 2) PROCESAR MUNICIPIOS (tu lógica original)
+        // ---------------------------------------------------------
+
+        const nodos = document.querySelectorAll(".municipio");
+        let hayOnclicks = false;
+
+        nodos.forEach(n => {
+            let code = n.getAttribute("onclick");
+
+            // Detectar onclick REAL (que apunte a un .svg)
+            const onclickReal = code && code.includes(".svg");
+
+            // Si NO tiene onclick real → es nivel final (pero igual usa AJAX)
+            if (!onclickReal) {
+                n.addEventListener("click", function (e) {
+                    e.stopPropagation();
+                    const nombreRegion = this.getAttribute("inkscape:label");
+                    console.log("Municipio (final): " + nombreRegion);
+
+                    $.ajax({
+                        async: false,
+                        url: 'SVG_Municipios_AJAX.php',
+                        data: { municipio: nombreRegion },
+                        success: function(data) {
+                            enviarDato(data);
+                        }
+                    });
+                });
+                return;
+            }
+
+            // Si tiene onclick real, este mapa navega
+            hayOnclicks = true;
+
+            // Reescribir ruta .svg → .html
+            const archivo = code.match(/'(.*?)'/)[1];
+            const base = archivo.replace(".svg", "");
+            const nuevo = code.replace(archivo, base + ".html");
+            n.setAttribute("onclick", nuevo);
+        });
+
+        // Solo inicializar regiones si este mapa realmente navega
+        if (hayOnclicks) {
+            inicializarRegiones();
+        }
+    });
+
+// ---------------------------------------------------------
+// 3) Inicializar regiones navegables (tu lógica original)
+// ---------------------------------------------------------
+    function inicializarRegiones() {
+        var test = document.querySelectorAll(".municipio");
+
+        for (var i = 0; i < test.length; i++) {
+
+            let code = test[i].getAttribute("onclick");
+            if (!code || !code.includes(".svg")) continue;
+
+            test[i].addEventListener("click", function(e) {
+                e.stopPropagation();
+                var nombreRegion = this.getAttribute('inkscape:label');
+                console.log("Municipio: " + nombreRegion);
+
+                $.ajax({
+                    async: false,
+                    url: 'SVG_Municipios_AJAX.php',
+                    data: { municipio: nombreRegion },
+                    success: function(data) {
+                        enviarDato(data);
+                    }
+                });
+            });
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 4) Enviar datos al padre
+    // ---------------------------------------------------------
+    function enviarDato(region) {
+        var datoParaEnviar = "ubic_municipio_id;" + region;
+        window.parent.postMessage(datoParaEnviar, window.location.origin);
+    }
+
+    function enviarDatoComarca(codigo) {
+        var datoParaEnviar = "ubic_comarca_id;" + codigo;
+        window.parent.postMessage(datoParaEnviar, window.location.origin);
+    }    </script>
+
+</body>
+</html>

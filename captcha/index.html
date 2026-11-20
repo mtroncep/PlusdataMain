@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Captcha Razonado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Control Formulario de Registro</h2>
+    <form id="myForm">
+<!--      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+-->
+      <!-- 🔐 CAPTCHA -->
+      <div class="captcha-box">
+        <p id="captcha-question">Cargando pregunta...</p>
+        <input 
+          type="text" 
+          id="captcha-answer" 
+          placeholder="Tu respuesta..." 
+          autocomplete="off"
+          required 
+        />
+        <button type="button" id="refresh-btn" title="Nueva pregunta">🔄</button>
+      </div>
+      <span id="captcha-feedback"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="captcha.js"></script>
+</body>
+</html>

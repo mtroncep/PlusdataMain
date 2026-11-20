@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="Canelones" inkscape:label="Comarca Única" class="comarca" sodipodi:docname="UruguayDepartamentoCanelones.svg" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="1.0282051" inkscape:cx="278.15462" inkscape:cy="368.11722" inkscape:current-layer="Canelones" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <g id="zonas" style="cursor:pointer;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="path2" inkscape:label="Aguas Corrientes" class="municipio" style="fill:#f8f593" d="m 60.8,315.5 7.7,-1.2 -0.8,-5.5 3.1,-2.3 4.7,2.3 4.7,-5.5 8.6,0.8 3.1,-3.1 20.1,19.7 -2.7,1.2 0.4,13.2 -4.3,0.8 -28.4,15.2 -3.1,4.3 h -2.7 l -12.9,-17.9 -10.1,-3.3 -2.5,-6.5 7,1.1 1.9,-5.2 z">
+      <title id="title1">Aguas Corrientes</title>
+    </path>
+    <path id="path3" inkscape:label="Canelones" class="municipio" style="fill:#f8f593" d="m 91.9,301.1 20.1,19.7 -2.7,1.2 0.4,13.2 -1.4,9.5 1.2,9.3 -1.2,5.8 -3.1,7.8 8.2,6.6 2.3,-0.8 7.4,8.2 5.1,1.6 3.1,5.1 5.1,2.7 11.3,3.9 10.1,-1.2 5.1,-1.9 1.6,4.3 h 9.3 l 9,-5.5 1.9,-12.5 5.1,-10.1 -6.2,-6.2 -8.6,1.2 -0.4,-6.2 3.5,-5.5 -5.8,-4.3 6.6,-3.1 -0.4,-6.2 -4.3,-7.8 4.3,-5.8 -0.4,-9.3 5.5,-6.6 v -3.5 l 4.3,-2.3 -3.1,-3.1 2.7,-9 2.7,-1.6 -0.8,-9.3 -3.9,-0.8 -3.1,5.5 h -7.8 l -7,-10.9 -3.9,2.3 -2.3,-10.1 h -4.7 l -7,9.3 -13.2,8.6 -13.2,-1.6 -2.3,7.8 h -8.6 l -6.2,7.8 -7,2.3 z">
+      <title id="title7">Canelones</title>
+    </path>
+    <path id="path4" inkscape:label="Los Cerrillos" class="municipio" style="fill:#f8f593" d="m 48.2,334.2 10.1,3.3 12.9,17.9 h 2.7 l 3.1,-4.3 28.4,-15.2 4.3,-0.8 -1.4,9.5 1.2,9.3 -1.2,5.8 -3.1,7.8 8.2,6.6 2.3,-0.8 7.4,8.2 5.1,1.6 3.1,5.1 v 0 l -7.8,-1.9 -7.4,10.1 -7,2.7 -1.2,3.5 -4.7,-0.2 6.6,8.6 2.7,9.7 -0.4,10.1 2.7,3.5 -10.5,5.1 -6.3,6.5 -3.2,6.3 -8.1,2.2 -0.4,2.3 -3.6,5.7 -10.6,-12.8 -26.7,-7.4 -22.8,-14.6 -12.3,-23 3.3,-18 -8.7,-18 12.7,-16.6 12,-8.7 7.5,-11.1 6,6.1 z">
+      <title id="title6">Los Cerrillos</title>
+    </path>
+    <path id="path5" inkscape:label="Progreso" class="municipio" style="fill:#f8f593" d="m 131.3,388.3 -7.8,-1.9 -7.4,10.1 -7,2.7 -1.2,3.5 -4.7,-0.2 6.6,8.6 2.7,9.7 -0.4,10.1 2.7,3.5 1.4,-3.7 v -3.5 l 7,-4.3 11.7,5.8 -0.4,5.5 3.9,3.5 4.7,-4.7 10.5,8.6 5.5,-0.4 v -3.1 l 1.2,-9.7 v -5.1 l -1.9,-5.1 5.1,-3.5 3.9,-5.5 6.6,7.4 7,-6.2 1.8,-19.9 -9,5.5 h -9.3 l -1.6,-4.3 -5.1,1.9 -10.1,1.2 -11.3,-3.9 z">
+      <title id="title10">Progreso</title>
+    </path>
+    <path id="path6" inkscape:label="Las Piedras" class="municipio" style="fill:#eabe93" d="m 116.52228,430.8 7.2,2.6 5,3.9 6.9,7.7 6.1,5.8 3.3,6.1 5.2,1.1 v 6.9 l 2.2,4.1 3.3,1.1 1.4,5 3.07772,2.3 1.92228,-4.2 2,-1.8 2,-5.6 5.6,-3.8 0.8,-2.3 2,0.5 4.3,-0.8 2.8,-1.3 2.3,6.1 1,1.7 2.5,0.5 1.3,-1.9 2.4,-6.7 2.7,1.6 3.7,-1.8 2.3,-3.3 6.9,-27.8 -21.2,-3 -13.5,18.2 -3,-0.8 -0.3,-5.2 -5.5,1.1 -4,1.5 v 3.1 l -5.5,0.4 -10.5,-8.6 -4.7,4.7 -3.9,-3.5 0.4,-5.5 -11.7,-5.8 -7,4.3 z">
+      <title id="title9">Las Piedras</title>
+    </path>
+    <path id="path7" inkscape:label="La Paz" class="municipio" style="fill:#f8f593" d="m 98.1,446 6.3,-6.5 10.5,-5.1 1.4,-3.7 7.2,2.6 5,3.9 6.9,7.7 6.1,5.8 3.3,6.1 5.2,1.1 v 6.9 l 2.2,4.1 3.3,1.1 1.4,5 3.3,2.4 -2.8,5.1 0.3,3.3 -1.3,0.8 -0.3,1.8 -3.9,3.2 -2.9,0.7 -1.1,-3.1 -2.5,-1.8 -5,-2.7 -4.5,-3.4 -3.8,-0.5 -4.5,-2 -1.3,-3.4 0.7,-3.4 -3.1,-1.6 0.2,-1.8 -1.3,-6.1 -2.9,-1.6 -2.9,-3.6 -1.8,0.2 -1.1,-0.9 -1.1,-3.4 -5.9,-4.5 -0.4,-1.4 -1.8,0.7 z">
+      <title id="title8">La Paz</title>
+    </path>
+    <path id="path8" inkscape:label="18 de Mayo" class="municipio" style="fill:#02c4fc" d="m 159.32228,438.09929 9.5,-2.6 0.3,5.2 3,0.8 13.5,-18.2 -4.5,-12.9 -7,6.2 -6.6,-7.4 -3.9,5.5 -5.1,3.5 1.9,5.1 v 5.1 z">
+      <title id="title11">18 de Mayo</title>
+    </path>
+    <path id="path9" inkscape:label="San Ramón" class="municipio" style="fill:#f8f593" d="m 177.5,229.2 5.8,-6.7 -3.1,-10.3 9,-9.5 12.9,-19.6 6,-17 14.6,-6 16.7,-5.6 v -8.6 l 21.7,-7.3 15.7,10.3 22.7,12 19.4,-9.2 17.8,10 21.5,-3.8 2.1,-9.4 18,-8.3 4.4,12 -5.5,13.8 -8.3,8.3 -2.8,9.9 -10.5,9.9 -14.3,22.6 -5.5,5.5 -2.2,9.4 -6.6,-2.2 h -3.9 l -2.2,-5.5 3.9,-3.3 -6.6,-4.4 -3.3,-6.6 -3.9,-0.6 1.1,-4.4 -5.5,-2.2 -2.2,-12.1 -8.3,0.6 -8.8,6.6 -9.9,1.7 -3.3,-3.3 -9.9,2.8 -4.4,6.6 -13.8,0.6 -9.9,4.4 -6.1,4.4 -5,0.6 -5.5,2.2 -2.2,5 -4.4,-1.1 -2.2,6.1 -3.3,-1.1 -0.6,7.2 -6.6,1.9 z">
+      <title id="title3">San Ramón</title>
+    </path>
+    <path id="path10" inkscape:label="San Antonio" class="municipio" style="fill:#f8f593" d="m 200.2,234.9 6.6,-1.9 0.6,-7.2 3.3,1.1 2.2,-6.1 4.4,1.1 2.2,-5 5.5,-2.2 6.4,3.8 4.7,-3.5 4.5,0.4 2.7,2.1 4.3,-1.9 0.8,-3.3 11.7,3.1 6,4.9 -0.4,5.5 2.1,1.4 -1.8,6.6 7.4,9 2.7,8.6 0.4,5.3 7,5.7 -6.2,14 -4.3,14.4 -7.8,3.1 -3.5,3.1 -5.1,-0.4 -3.1,2.7 -11.3,1.6 -9,3.9 -6.2,-1.2 -6.6,-5.1 -4.7,-7 v -4.3 l -8.6,-4.3 -7.4,5.1 -5.5,-3.1 -1.6,-3.5 -3.5,-2.1 3.9,-4.7 z">
+      <title id="title4">San Antonio</title>
+    </path>
+    <path id="path11" inkscape:label="Santa Lucía" class="municipio" style="fill:#f8f593" d="m 177.5,229.2 22.7,5.7 -7,39.7 -3.9,4.7 -3.9,-0.8 -3.1,5.5 h -7.8 l -7,-10.9 -3.9,2.3 -2.3,-10.1 h -4.7 l -7,9.3 -13.2,8.6 -13.2,-1.6 -2.3,7.8 h -8.6 l -6.2,7.8 -7,2.3 -7,1.6 -3.1,3.1 -8.6,-0.8 -4.7,5.5 -4.7,-2.3 -3.1,2.3 0.8,5.5 -7.7,1.2 -4.5,-3.5 -8.8,-14.2 -1.1,-16.7 8.4,-9.9 5.9,-17.8 3.2,-4.8 -1.3,-18.4 4.7,-11.3 5,-0.2 21,-10.8 12.2,1.8 17.4,11.7 8.8,-6.1 12,10 13.6,4.2 z">
+      <title id="title2">Santa Lucía</title>
+    </path>
+    <path id="path12" inkscape:label="San Bautista" class="municipio" style="fill:#f8f593" d="m 224.9,214.8 6.4,3.8 4.7,-3.5 4.5,0.4 2.7,2.1 4.3,-1.9 0.8,-3.3 11.7,3.1 6,4.9 -0.4,5.5 2.1,1.4 -1.8,6.6 7.4,9 2.7,8.6 0.4,5.3 7,5.7 -6.2,14 -4.3,14.4 -3.5,11.1 11.7,-0.4 4.3,-2.7 8.2,0.4 7.8,-3.1 10.1,11.7 4.7,13.2 4.7,2.3 4.7,-5.5 8.6,-4.7 -3.1,-10.1 2.3,-9.3 -3.1,-6.2 6.2,-0.8 3.1,-10.9 -0.8,-25.7 -6.2,0.8 0.8,-19.5 -6.6,-2.2 h -3.9 l -2.2,-5.5 3.9,-3.3 -6.6,-4.4 -3.3,-6.6 -3.9,-0.6 1.1,-4.4 -5.5,-2.2 -2.2,-12.1 -8.3,0.6 -8.8,6.6 -9.9,1.7 -3.3,-3.3 -9.9,2.8 -4.4,6.6 -13.8,0.6 -9.9,4.4 -6.1,4.4 z">
+      <title id="title24">San Bautista</title>
+    </path>
+    <path id="path13" inkscape:label="Tala" class="municipio" style="fill:#f8f593" d="m 378.1,140.1 13,-12.7 8.6,-1.5 3.5,-9.1 15.1,-3.4 11.1,5 11.1,-2.6 10.5,-0.1 11.4,-2.9 15.1,-0.2 27.6,88 10.2,12.9 -11.3,0.3 -8.8,5.5 -4.4,9.9 -7.2,0.6 -5,-6.1 -12.1,6.6 -4.4,12.1 -28.6,14.9 -12.1,1.7 -13.2,6.1 -6.1,11 -62.4,-0.2 -0.8,-25.7 -6.2,0.8 0.8,-19.5 2.2,-9.4 5.5,-5.5 14.3,-22.6 10.5,-9.9 2.8,-9.9 8.3,-8.3 5.5,-13.8 z">
+      <title id="title5">Tala</title>
+    </path>
+    <path id="path14" inkscape:label="San Jacinto" class="municipio" style="fill:#f8f593" d="m 402,276 -62.4,-0.2 -3.1,10.9 -6.2,0.8 3.1,6.2 -2.3,9.3 3.1,10.1 -8.6,4.7 -4.7,5.5 -5.1,9.7 3.3,8.3 -5.5,2.2 -0.6,16.5 h 3.9 l 1.1,6.6 -5,5.5 10.5,3.9 7.7,1.7 12.1,5.5 -1.7,6.6 17.6,4.4 8.8,-6.1 10.5,1.7 H 400 l 3.9,-5.5 13.8,-3.9 -5.5,-6.6 5.5,-8.8 -1.7,-2.8 2.2,-7.2 -2.8,-3.9 6.1,-5 -5.5,-13.2 7.7,-5 4.4,1.7 2.8,-6.6 -3.3,-3.9 4.4,-8.8 4.4,-2.2 4.4,-18.2 -4.4,-3.3 1.1,-5 z">
+      <title id="title23">San Jacinto</title>
+    </path>
+    <path id="path15" inkscape:label="Migues" class="municipio" style="fill:#f8f593" d="m 402,276 6.1,-11 13.2,-6.1 12.1,-1.7 28.6,-14.9 4.4,-12.1 12.1,-6.6 5,6.1 7.2,-0.6 4.4,-9.9 8.8,-5.5 11.3,-0.3 1.2,8.4 12.7,16 -2.2,21.7 2.7,20.3 -10.3,10.9 -15.4,-5.1 -10.4,14.7 -2.5,14.1 10.2,6.9 11.3,6.4 10.3,12.1 10.1,19.3 -0.7,3 -12.8,-2.1 -11.3,1.8 -16.4,6.1 -35.4,6.1 -21.5,3.3 -12.7,-2.8 -4.4,5.8 -5.5,-6.6 5.5,-8.8 -1.7,-2.8 2.2,-7.2 -2.8,-3.9 6.1,-5 -5.5,-13.2 7.7,-5 4.4,1.7 2.8,-6.6 -3.3,-3.9 4.4,-8.8 4.4,-2.2 4.4,-18.2 -4.4,-3.3 1.1,-5 z">
+      <title id="title30">Migues</title>
+    </path>
+    <path id="path16" inkscape:label="Montes" class="municipio" style="fill:#f8f593" d="m 519.3,290.8 -15.4,-5.1 -10.4,14.7 -2.5,14.1 10.2,6.9 11.3,6.4 10.3,12.1 10.1,19.3 6.8,-3.9 5.8,-1.6 3.1,4.7 5.9,-2.4 -4.8,-20.3 -10.1,-11.4 -16.1,-12.2 1.7,-9.9 z">
+      <title id="title29">Montes</title>
+    </path>
+    <path id="path17" inkscape:label="Soca" class="municipio" style="fill:#f8f593" d="m 554.5,356 -5.9,2.4 -3.1,-4.7 -5.8,1.6 -6.8,3.9 -0.7,3 -12.8,-2.1 -11.3,1.8 -16.4,6.1 -56.9,9.4 -12.7,-2.8 -4.4,5.8 -3.5,5.6 2.3,3.5 -3.9,1.9 3.9,7.4 -3.5,7 3.5,3.1 -2.3,5.1 3.1,2.7 -9.7,3.9 2.3,5.8 -4.7,3.5 3.1,3.1 5.5,-0.4 2.7,5.5 4.3,2.3 -1.6,5.8 6.2,5.8 7,3.1 5.5,1.2 -5.5,8.2 2.7,3.1 10.9,-5.5 3.1,4.7 h 14.8 l 4.7,3.9 3.9,-1.2 13.6,5.1 3.9,3.9 3.5,-0.8 10.5,7.8 10.9,7 17.1,7 10.1,-0.4 26.1,-5.8 13.6,1.6 15.2,1.6 7.1,-3.8 -8.3,-7.2 -3.7,-7.7 -6,-5.2 -11.7,-1.2 2.9,-7 -1.9,-4.9 1.2,-5.4 4.8,-7.4 -2.4,-6.1 -0.9,-12.1 -5.9,-2.1 -9.6,-7.2 -5.7,-8.2 2.2,-13.2 1,-18.6 -6.6,-11.6 z">
+      <title id="title26">Soca</title>
+    </path>
+    <path id="path18" inkscape:label="La Floresta" class="municipio" style="fill:#f8f593" d="m 435.2,467.8 10.9,-5.5 3.1,4.7 H 464 l 4.7,3.9 3.9,-1.2 13.6,5.1 3.9,3.9 3.5,-0.8 10.5,7.8 10.9,7 17.1,7 10.1,-0.4 26.1,-5.8 28.8,3.1 7.1,-3.8 0.6,9.9 -13.5,0.8 -43.1,5.8 -12.5,-0.2 -6.2,0.8 -15.6,-6.2 -5.1,0.3 -3.3,-3.9 -7.2,-3.8 -19.4,-0.4 -11.5,4.5 -3.6,-4.9 -15,-8.6 -8.5,1.2 -2.6,-11.6 3.1,-5.5 z">
+      <title id="title28">La Floresta</title>
+    </path>
+    <path id="path19" inkscape:label="Parque del Plata" class="municipio" style="fill:#03c021" d="m 432.5,464.7 -9.7,8 v 4.3 l -5.5,1.6 -5.8,4.3 5.8,13.6 23.3,-8.4 -2.6,-11.6 3.1,-5.5 -5.8,-3.1 z">
+      <title id="title27">Parque del Plata</title>
+    </path>
+    <path id="path20" inkscape:label="Atlántida" class="municipio" style="fill:#f8f593" d="m 417.7,380.4 -13.8,3.9 -3.9,5.5 h -21.5 l 3.5,16.9 -0.4,12.1 4.3,14.4 -25.3,5.8 v 7 l 5.1,4.7 12.9,-1.2 v 9 l -0.8,9.3 5.8,3.5 h 5.5 l -1.2,8.6 -3,13.9 16.7,-0.3 2.7,6.8 2.5,0.7 6.1,-1.9 4.3,-2.7 -5.8,-13.6 5.8,-4.3 5.5,-1.6 v -4.3 l 9.7,-8 5.5,-8.2 -5.5,-1.2 -7,-3.1 -6.2,-5.8 1.6,-5.8 -4.3,-2.3 -2.7,-5.5 -5.5,0.4 -3.1,-3.1 4.7,-3.5 -2.3,-5.8 9.7,-3.9 -3.1,-2.7 2.3,-5.1 -3.5,-3.1 3.5,-7 -3.9,-7.4 3.9,-1.9 -2.3,-3.5 z">
+      <title id="title25">Atlántida</title>
+    </path>
+    <path id="path21" inkscape:label="Empalme Olmos" class="municipio" style="fill:#f8f593" d="m 312.85686,371.97843 1.3,5.9 -2.3,6.2 3.9,6.6 -3.1,8.6 3.1,4.3 -6.2,4.7 5.1,7.8 -2.3,9 1.9,6.6 -2.7,5.8 -7.8,4.7 0.4,5.1 6.2,-4.3 1.6,6.6 21.8,-3.9 3.1,4.3 3.5,-0.4 1.9,-6.2 h 5.1 l 2.3,-5.1 10.9,0.6 25.3,-5.8 -4.3,-14.4 0.4,-12.1 -3.5,-16.9 -10.5,-1.7 -8.8,6.1 -17.6,-4.4 1.7,-6.6 -12.1,-5.5 -7.7,-1.7 z">
+      <title id="title21">Empalme Olmos</title>
+    </path>
+    <path id="path22" inkscape:label="Salinas" class="municipio" style="fill:#f8f593" d="m 384.9,493.8 -32,15.9 -6.3,-4.7 -11.7,-5.5 -5.8,-7.4 1.9,-3.5 -6.6,-0.8 5.8,-9.7 3.9,0.8 3.1,-10.9 -0.4,-17.9 3.5,-0.4 1.9,-6.2 h 5.1 l 2.3,-5.1 10.9,0.6 v 7 l 5.1,4.7 12.9,-1.2 v 9 l -0.8,9.3 5.8,3.5 h 5.5 l -1.2,8.6 z">
+      <title id="title19">Salinas</title>
+    </path>
+    <path id="path23" inkscape:label="Pando" class="municipio" style="fill:#f8f593" d="m 311.87843,384.2 -11.7,11.9 -7.8,-0.4 -1.9,3.1 4.7,2.7 -3.5,6.6 -5.8,4.3 -5.1,-0.8 -0.4,5.5 -17.5,17.9 0.8,3.5 2.3,5.5 4.7,0.8 1.9,3.1 -2.3,3.1 9.7,3.9 h 10.1 l 1.2,4.3 -0.8,5.5 3.9,4.7 1.2,7.7 -8.2,7.1 -3.1,7.4 -5.8,6.6 2.3,3.1 10.1,2.3 3.1,1.9 4.3,-3.5 0.2,-3.8 2.2,-0.1 3.3,-6.2 4.8,-2 7,1.9 8.6,-4.1 5.8,-9.7 3.9,0.8 3.1,-10.9 -0.4,-17.9 -3.1,-4.3 -21.8,3.9 -1.6,-6.6 -6.2,4.3 -0.4,-5.1 7.8,-4.7 2.7,-5.8 -1.9,-6.6 2.3,-9 -5.1,-7.8 6.2,-4.7 -3.1,-4.3 3.1,-8.6 z">
+      <title id="title20">Pando</title>
+    </path>
+    <path id="path24" inkscape:label="Barros Blancos" class="municipio" style="fill:#69ffff" d="m 291.3,459.2 -3.9,1.4 -6.6,-0.4 v 3.5 l 4.3,0.8 -3.1,3.1 h -5.1 v 5.5 l -7,1.9 -7,0.8 -4.3,0.8 -3.4,11 v 0 l 2.5,0.8 0.8,2 1.5,1.3 0.8,2.5 -0.8,0.8 1.5,0.5 14.3,3.9 2.6,-1.2 5.8,-6.6 3.1,-7.4 8.2,-7.1 -1.2,-7.7 -3.9,-4.7 z">
+      <title id="title15">Barros Blancos</title>
+    </path>
+    <path id="path25" inkscape:label="Ciudad de la Costa" class="municipio" style="fill:#f8f593" d="m 352.9,509.7 -6.3,-4.7 -11.7,-5.5 -5.8,-7.4 1.9,-3.5 -6.6,-0.8 -8.6,4.1 -7,-1.9 -4.8,2 -3.3,6.2 -2.2,0.1 -0.2,3.8 -4.3,3.5 -3.1,-1.9 -2.3,4.1 -1.2,12.9 -7,5.5 -3.5,-0.8 -5.1,4.3 -1.6,7.8 -8.6,3.1 16.7,11.7 23.1,-15 7.8,-6.6 19.9,-11.4 z">
+      <title id="title17">Ciudad de la Costa</title>
+    </path>
+    <path id="path26" inkscape:label="Colonia Nicolich" class="municipio" style="fill:#ee4cd6" d="m 290.9,503.7 -10.1,-2.4 -2.3,-3.1 -2.6,1.2 -14.3,-3.9 -0.7,2.6 -1.8,1.8 -2,0.8 -0.8,2 -1.8,1.5 -0.5,2.8 1.3,2.3 -1.1,1.5 v 2.5 l 0.5,1.8 -3.6,0.8 -1.4,8 4.5,0.3 2.6,1.8 3.3,-4.1 -0.8,-3.3 4.4,0.4 1.6,3.3 4.6,3.3 2.7,-0.6 -0.5,4.5 4.8,-4.1 3.5,0.8 7,-5.5 1.2,-12.9 z">
+      <title id="title16">Colonia Nicolich</title>
+    </path>
+    <path id="path27" inkscape:label="Paso Carrasco" class="municipio" style="fill:#f8f593" d="m 249.8,524 0.8,3.1 -2,2.8 0.5,15.3 0.5,3.3 -1.3,2.3 -0.5,2.8 -2.3,4.3 4.3,2.5 3.1,-1.5 3.1,0.5 1.3,2 8,1 13.3,-10.3 -16.7,-11.7 8.6,-3.1 1.6,-7.8 0.5,-4.5 -2.7,0.6 -4.3,-3.3 -1.6,-3.3 -4.7,-0.4 0.8,3.3 -3.3,4.1 -2.3,-1.8 z">
+      <title id="title18">Paso Carrasco</title>
+    </path>
+    <path id="path28" inkscape:label="Suárez" class="municipio" style="fill:#ef2293" d="m 255.2,487.6 3.4,-11 11.3,-1.6 7,-1.9 v -5.5 h 5.1 l 3.1,-3.1 -4.3,-0.8 v -3.5 l 6.6,0.4 3.9,-1.4 -1.2,-4.3 H 280 l -9.7,-3.9 2.3,-3.1 -1.9,-3.1 -4.7,-0.8 -2.3,-5.5 -0.8,-3.5 -7.6,7.8 -5.5,5.1 -3.9,-1.6 -1.2,5.5 -2.7,1.9 1.9,3.9 -4.7,3.1 0.8,4.7 4.3,1.6 0.8,3.5 -12.9,7.8 1.9,1.9 -8.6,2.8 1.5,3.8 -2,4.1 -1.8,1.5 1.3,2.5 0.3,1.3 1.8,0.8 2.5,2.3 4.1,-2.8 2.5,-0.3 1.3,-2.8 1.8,0.5 1.3,-0.5 0.3,-2.3 2,-1 1.8,1.5 2.5,-0.3 1.8,-6.1 5.3,1.3 z">
+      <title id="title14">Suárez</title>
+    </path>
+    <path id="path29" inkscape:label="Toledo" class="municipio" style="fill:#42f74f" d="m 246.10071,446.15686 -1.2,5.5 -2.7,1.9 1.9,3.9 -4.7,3.1 0.8,4.7 4.3,1.6 0.8,3.5 -12.9,7.8 1.9,1.9 -8.6,2.8 -4.3,-4.1 -2.3,0.5 -4.6,-1.5 h -1.8 l -0.3,-4.3 -1.5,-2.5 -2,-1 -0.5,-2.5 2,-2.5 -0.5,-7.9 -3.1,-1.5 -4.1,0.5 18.2,-15.3 1.6,5.8 5.8,9.3 3.9,-3.1 2.3,-16.7 6.6,3.1 3.1,-3.1 3.1,2.7 z">
+      <title id="title13">Toledo</title>
+    </path>
+    <path id="path30" inkscape:label="Santa Rosa" class="municipio" style="fill:#f8f593" d="m 178.43529,343.9 20.1,-8.6 -2.7,15.6 15.6,-1.2 5.5,-7 4.3,1.2 0.8,7 33.1,-1.9 7,-3.1 5.8,5.1 0.4,4.7 5.5,6.6 1.6,4.3 -0.8,3.9 1.9,1.6 5.8,-14.4 11.3,-14 8.6,-15.2 13.4,4.6 5.1,-9.7 -4.7,-2.3 -4.7,-13.2 -10.1,-11.7 -7.8,3.1 -8.2,-0.4 -4.3,2.7 -11.7,0.4 3.5,-11.1 -7.8,3.1 -3.5,3.1 -5.1,-0.4 -3.1,2.7 -11.3,1.6 -9,3.9 -6.2,-1.2 -6.6,-5.1 -4.7,-7 v -4.3 l -8.6,-4.3 -7.4,5.1 -5.5,-3.1 -1.6,-3.5 -3.5,-2.1 0.8,9.3 -2.7,1.6 -2.7,9 3.1,3.1 -4.3,2.3 v 3.5 l -5.5,6.6 0.4,9.3 -4.3,5.8 4.3,7.8 z">
+      <title id="title22">Santa Rosa</title>
+    </path>
+    <path id="path31" inkscape:label="Sauce" class="municipio" style="fill:#f8f593" d="m 178.31372,343.9 20.1,-8.6 -2.7,15.6 15.6,-1.2 5.5,-7 4.3,1.2 0.8,7 33.1,-1.9 7,-3.1 5.8,5.1 0.4,4.7 5.5,6.6 1.6,4.3 -0.8,3.9 1.9,1.6 5.8,-14.4 11.3,-14 8.6,-15.2 13.4,4.6 3.3,8.3 -5.5,2.2 -0.6,16.5 h 3.9 l 1.1,6.6 -5,5.5 1.3,5.9 -2.3,6.2 -11.7,11.9 -7.8,-0.4 -1.9,3.1 4.7,2.7 -3.5,6.6 -5.8,4.3 -5.1,-0.8 -0.4,5.5 -17.5,17.9 -13,12.9 -3.9,-1.6 1.6,-7.6 -3.1,-2.7 -3.1,3.1 -6.6,-3.1 -2.3,16.7 -3.9,3.1 -5.8,-9.3 -1.6,-5.8 -18.2,15.3 -1,-1.8 h -2 l 6.9,-27.8 -21.2,-3 -4.5,-12.9 1.8,-19.9 1.9,-12.5 5.1,-10.1 -6.2,-6.2 -8.6,1.2 -0.4,-6.2 3.5,-5.5 -5.8,-4.3 z">
+      <title id="title12">Sauce</title>
+    </path>
+  </g>
+  <g id="textos" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <text x="71.483795" y="329.45761" id="text43">Corrientes</text>
+    <text x="31.330301" y="317.77753" id="text2">Aguas</text>
+    <text x="141.56163" y="309.97922" id="text3"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="141.56163" y="309.97922" id="tspan4-8-0">Canelones</tspan></text>
+    <text x="57.632458" y="398.80655" id="text4"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="57.632458" y="398.80655" id="tspan4-8-4">Los Cerrillos</tspan></text>
+    <text x="147.68164" y="407.10748" id="text44"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="147.68164" y="407.10748" id="tspan4-8-0-77">Progreso</tspan></text>
+    <text x="68.265678" y="517.10315" id="text45"><tspan sodipodi:role="line" style="stroke-width:0.374247" x="68.265678" y="517.10315" id="tspan4-8-0-77-2">Las Piedras</tspan></text>
+    <text x="124.47827" y="452.86102" id="text46"><tspan x="124.47827" y="470.36102" id="tspan45">La Paz</tspan></text>
+    <text x="160.9328" y="530.97882" id="text47"><tspan sodipodi:role="line" style="stroke-width:0.268662" x="160.9328" y="530.97882" id="tspan5">18 de Mayo</tspan></text>
+    <text x="278.72437" y="178.92592" id="text48"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="278.72437" y="178.92592" id="tspan4-8-0-75">San Ramón</tspan></text>
+    <text x="235.17726" y="250.11719" id="text49"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="235.17726" y="250.11719" id="tspan4-8-0-2">San</tspan><tspan sodipodi:role="line" style="stroke-width:0.434518" x="235.17726" y="267.61719" id="tspan37">Antonio</tspan></text>
+    <text x="120.75182" y="253.36601" id="text50"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="120.75182" y="253.36601" id="tspan4-8-0-0">Santa Lucía</tspan></text>
+    <text x="306.71191" y="267.12491" id="text51"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="306.71191" y="267.12491" id="tspan4-8-0-71">San</tspan><tspan sodipodi:role="line" style="stroke-width:0.434518" x="306.71191" y="284.62491" id="tspan3">Bautista</tspan></text>
+    <text x="410.68173" y="197.42946" id="text52"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="410.68173" y="197.42946" id="tspan4-8-0-710">Tala</tspan></text>
+    <text x="368.86279" y="343.32169" id="text53"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="368.86279" y="343.32169" id="tspan4-8-0-9">San Jacinto</tspan></text>
+    <text x="474.36447" y="276.13358" id="text54"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="474.36447" y="276.13358" id="tspan4-8-0-99-3">Migues</tspan></text>
+    <text x="520.61536" y="314.20779" id="text55"><tspan sodipodi:role="line" style="stroke-width:0.320382" x="520.61536" y="314.20779" id="tspan4-8-0-99-38">Montes</tspan></text>
+    <text x="489.89694" y="425.76553" id="text56"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="489.89694" y="425.76553" id="tspan4-8-0-99-5">Soca</tspan></text>
+    <text x="515.41437" y="510.05832" id="text3-84"><tspan sodipodi:role="line" style="stroke-width:0.391303" x="515.41437" y="510.05832" id="tspan4-8-0-99">La Floresta</tspan></text>
+    <text x="481.39978" y="538.82098" id="text3-96"><tspan x="481.39978" y="538.82098" id="tspan56">Parque del Plata</tspan></text>
+    <text x="425.49091" y="563.84882" id="text3-5"><tspan x="425.49091" y="563.84882" id="tspan57">Atlántida</tspan></text>
+    <text style="font-size:11.1221px;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.434518;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" x="347.99084" y="411.74796" id="text3-87"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="347.99084" y="411.74796" id="tspan4-8-0-78">Empalme</tspan><tspan sodipodi:role="line" style="stroke-width:0.434518" x="347.99084" y="425.65057" id="tspan14">Olmos</tspan></text>
+    <text x="361.03943" y="483.10437" id="text3-39" style="font-size:14px"><tspan sodipodi:role="line" style="stroke-width:0.361423" x="361.03943" y="483.10437" id="tspan4-8-0-88">Salinas</tspan></text>
+    <text style="font-size:12.1142px;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.473279;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1" x="314.87814" y="466.5238" id="text3-9-4"><tspan sodipodi:role="line" style="stroke-width:0.473279" x="314.87814" y="466.5238" id="tspan4-8-0-4-1">Pando</tspan></text>
+    <text x="167.46622" y="552.70154" id="text57"><tspan sodipodi:role="line" style="stroke-width:0.269833" x="167.46622" y="552.70154" id="tspan9">Barros Blancos</tspan></text>
+    <text x="333.9884" y="525.08502" id="text58"><tspan sodipodi:role="line" style="stroke-width:0.291359" x="333.9884" y="525.08502" id="tspan12">Ciudad de la</tspan><tspan sodipodi:role="line" style="stroke-width:0.291359" x="333.9884" y="542.58502" id="tspan13">Costa</tspan></text>
+    <text x="162.7261" y="571.69373" id="text1-2"><tspan x="162.7261" y="571.69373" id="tspan58">Colonia Nicolich</tspan></text>
+    <text x="304.1731" y="591.39661" id="text3-1"><tspan sodipodi:role="line" style="stroke-width:0.245442" x="304.1731" y="591.39661" id="tspan11">Paso Carrasco</tspan></text>
+    <text x="195.43138" y="514.6311" id="text1"><tspan sodipodi:role="line" style="stroke-width:0.38151" x="195.43138" y="514.6311" id="tspan4-8-0-4">Suárez</tspan></text>
+    <text x="196.04709" y="497.65247" id="text"><tspan sodipodi:role="line" style="stroke-width:0.352111" x="196.04709" y="497.65247" id="tspan4-8-0-5">Toledo</tspan></text>
+    <text x="244.7155" y="326.82886" id="text3-0"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="244.7155" y="326.82886" id="tspan4-8-0-1">Santa Rosa</tspan></text>
+    <text x="241.73853" y="393.60172" id="text3-6"><tspan sodipodi:role="line" style="stroke-width:0.434518" x="241.73853" y="393.60172" id="tspan4-8-0-8">Sauce</tspan></text>
+    <rect width="168.40451" height="64.313858" x="413.46625" y="32.08007" ry="22.226809" style="cursor:pointer;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:white;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none" id="rect" />
+    <text x="497.61597" y="85.754753" id="text01" style="cursor:pointer;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">Canelones</text>
+    <text x="497.07001" y="57.314274" id="text02" style="cursor:pointer;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">Departamento</text>
+  </g>
+  <g id="flechas" style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="flecha" d="m 396.55389,449.45946 h 1.9 1.9 l -1,-1.6 -1,-1.6 -0.9,1.6 z m 3.2,99.6 h -1.9 -1.9 l 1,1.6 1,1.6 0.9,-1.6 z m -1.2,-99.4 -0.6,99.4" />
+    <path id="flecha1" d="m 426,485.8 h 1.9 1.9 l -1,-1.6 -1,-1.6 -0.9,1.6 z m 3.4,38.1 h -1.9 -1.9 l 1,1.6 1,1.6 0.9,-1.6 z m -1.6,-37.9 -0.3,37.7" />
+    <path id="flecha2" d="m 156.6,459.6 1.2,1.6 1.2,1.6 1.4,-2.7 1.4,-2.7 -2.5,1.1 z m -45.5,46.4 -1.2,-1.6 -1.2,-1.6 -1.4,2.7 -1.4,2.7 2.5,-1.1 z m 46.4,-44.7 -47.3,42.8" />
+    <path id="flecha3" d="m 165,430.3 h 2.1 2.1 l -1.1,-3.4 -1.1,-3.4 -1,3.4 z m 3.7,80.5 h -2.1 -2.1 l 1.1,3.4 1.1,3.4 1,-3.4 z m -1.8,-80.1 -0.3,79.7" />
+    <path id="flecha4" d="m 263.5,485.1 1.5,1.6 1.5,1.6 0.9,-3.2 0.9,-3.2 -2.4,1.6 z m -38.7,58 -1.5,-1.6 -1.5,-1.6 -0.9,3.2 -0.9,3.2 2.4,-1.6 z m 39.9,-56.2 -41.2,54.3" />
+    <path id="flecha5" d="m 261.3,509.1 1.4,1.5 1.4,1.5 0.9,-2.9 0.9,-2.9 -2.3,1.4 z m -36.5,52.5 -1.4,-1.5 -1.4,-1.5 -0.9,2.9 -0.9,2.9 2.3,-1.4 z m 37.6,-50.8 -38.8,49.1" />
+    <path id="flecha6" d="m 248.8,475.7 1.2,1.9 1.2,1.9 1.4,-2.9 1.4,-2.9 -2.5,1 z m -24.4,27.8 -1.2,-1.9 -1.2,-1.9 -1.4,2.9 -1.4,2.9 2.5,-1 z m 25.3,-25.8 -26.3,23.9" />
+    <path id="flecha7" d="m 257.6,553 h 1.9 1.9 l -1,-1.6 -1,-1.6 -0.9,1.6 z M 261.1,577.1 h -1.9 -1.9 l 1,1.6 1,1.6 0.9,-1.6 z m -1.6,-24 -0.3,23.8" />
+    <path id="flecha8" d="m 214.4,458.4 0.9,1.7 0.9,1.7 1.1,-2.6 1.1,-2.6 -2,0.9 z m -19.1,25.6 -0.9,-1.7 -0.9,-1.7 -1.1,2.6 -1.1,2.6 2,-0.9 z m 19.9,-23.9 -20.7,22" />
+  </g>
+</svg>

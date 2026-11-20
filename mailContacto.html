@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mail Contacto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="trad/traducciones.php"></script>
+    <script src="trad/traductor.js"></script>
+
+ <style>
+    /* Contenedor general */
+    #formContacto {
+        max-width: 450px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+        border: 1px solid #e6e6e6;
+    }
+
+    /* Etiquetas */
+    #formContacto .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 6px;
+    }
+
+    /* Inputs y textarea */
+    #formContacto .form-control {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 10px 12px;
+        transition: all 0.2s ease;
+    }
+
+    #formContacto .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 6px rgba(13,110,253,0.3);
+    }
+
+    /* Botón */
+    #formContacto button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: background 0.2s ease;
+    }
+
+    #formContacto button[type="submit"]:hover {
+        background: #0b5ed7;
+    }
+
+    /* Mensaje de respuesta */
+    #respuesta .alert {
+        border-radius: 8px;
+        font-size: 15px;
+    }    
+</style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+    <b><h3 align="center" style="font-family: Arial, Robo;" data-trad="ENVIO DE CONSULTA">ENVIO DE CONSULTA</h3></b>
+    
+    <form id="formContacto" class="p-3" autocomplete="off">
+        <div id="respuesta" class="mt-3"></div>
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label" data-trad="Nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        
+        <div>
+            <p></p>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label" data-trad="Correo electrónico">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div>
+            <p></p>
+        </div>
+        
+        <div class="mb-6">
+            <label for="mensaje" class="form-label" data-trad="Indique el motivo de su mensaje (sugerencia, reclamo, denuncia, u otro)">Indique el motivo de su mensaje (sugerencia, reclamo, denuncia, u otro)</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+
+        <div>
+            <p></p>
+        </div>
+        
+        <button type="submit" class="btn btn-warning" data-trad="Enviar consulta">Enviar consulta</button>
+
+        <div>
+            <p></p>
+        </div>
+        
+    </form>
+    
+    <script>
+        function traducir(texto) {
+//          console.log("A traducir: "+texto);
+//          console.log("Traducido : " + window.TRADUCCIONES[texto]);
+          if (window.TRADUCCIONES?.[texto]) {
+              return window.TRADUCCIONES[texto];
+          }
+          return texto;
+        }
+
+        function aplicarTraducciones() {
+            document.querySelectorAll('[data-trad]').forEach(el => {
+              const clave = el.getAttribute('data-trad');
+            // Si es un input con placeholder
+            if (el.hasAttribute('placeholder')) {
+              el.setAttribute('placeholder', traducir(clave));
+            } else {
+              // Para otros elementos, traducimos el texto interno
+              el.innerHTML = traducir(clave);
+              el.value = traducir(clave);
+            }
+            });
+        }
+
+          // Ejecutamos al cargar la página
+        window.onload = aplicarTraducciones();
+
+    </script>
+
+    <script>
+    document.getElementById("formContacto").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const datos = new FormData(this);
+
+        fetch("enviarContacto.php", {
+            method: "POST",
+            body: datos
+        })
+        .then(res => res.text())
+        .then(data => {
+            const mensaje = traducir(data);
+            document.getElementById("respuesta").innerHTML = 
+                `<div class="alert alert-info">${mensaje}</div>`;
+            document.getElementById("formContacto").reset();
+        })
+        .catch(err => {
+            document.getElementById("respuesta").innerHTML = 
+                `<div class="alert alert-danger">Error al enviar la consulta</div>`;
+        });
+    });
+
+    </script>
+</body>
+
+</html>

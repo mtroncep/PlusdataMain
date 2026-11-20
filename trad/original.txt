@@ -1,0 +1,343 @@
+Venta
+Permuta
+Alquiler
+Alquiler con opción a compra
+Alquiler habitación
+Compartir vivienda
+Subasta
+Subasta privada
+Apartamento
+LoftNoMuestra
+DúplexNoMuestra
+MonoambienteNoMuestra
+Casa
+ChaletNoMuestra
+Caba~naNoMuestra
+ÁticoNoMuestra
+Suelos
+Locales
+Oficinas
+Naves
+Parking
+Edificios
+Sepulcros
+Propiedades singulares
+Trasteros
+Precio
+Gastos mensuales
+Euros
+Dólares EEUU
+Pesos Argentina
+Pesos Uruguay
+Reales Brasil
+Acepta Bitcoin
+Acepta Permuta
+Nuda Propiedad
+Urge cerrar trato
+Negociables
+Sin gastos de inmobiliaria
+Hipoteca Inversa
+Meses de fianza
+Mínimo de meses de contrato
+Publicar con precio oculto
+Superficie
+Planta baja y cantidad plantas superiores
+Sobre parcela m2
+Metros2
+de madera
+muros de piedra
+techo de pizarra
+techo de tejas
+Ideal vivienda habitual
+Sobre callejon
+Sobre avenida
+En esquina
+Con salida a dos calle
+Vía de tierra
+Vía asfaltada
+Suelo llano
+Suelo en pendiente
+En urbanización privada/cerrada
+Con cerco perimetral de obra
+Edificabilidad m2
+Al frente
+Contrafrente
+Interno
+Externo
+Luminoso
+Planta igual o superior a:
+No es última planta
+Hectareas
+Sin vecinos
+En el campo
+Urbano
+Rural no urbanizable
+Rural urbanizable
+Industrial
+En centro comercial
+Sala estar-reuniones
+Sala comedor
+Dormitorios
+Dormitorios en suite
+Nave m2
+Despachos
+Vestidor
+Sala de juegos
+Armarios empotrados
+Suelos madera
+Suelos alfombrados
+Suelo radiante
+Salida de Humos
+Salón diáfano
+Salón tabicado
+Fachada de metros
+Escaparate de metros
+Altura salón metros
+Área oficinas metros
+Depósito metros
+Cocina grande
+Cocina peque~na
+Cocina comedor
+Cocina americana
+Con alacenas y armarios
+Con electrodomésticos
+Lavadero
+Ba~no con ba~nera
+Ba~nos peque~nos
+Ba~no con plato ducha
+Patio
+Ba~nos clientes
+Vestuarios empleados
+Ba~no Privado
+Ba~no compartido
+Cocina uso compartido
+Dependencias personal servicio
+Garaje cerrado
+Plaza parking techada
+Plaza de parking al aire libre
+Vehículos que admite
+Solarium
+Jardín al frente
+Jardín interior
+Piscina comunitaria
+Piscina
+Balcones
+Balcón terraza
+Terraza accesible
+Chimenea a le~na
+Chimenea a gas
+Barbacoa
+Sótano m2
+Trastero, baulero
+Bodega
+Salón usos varios
+Muelle propio metros
+Pista de Tenis
+Quincho m2
+Le~nera
+Muelles de carga
+Palier de acceso privado
+Puerta blindada
+Accesible A+
+Practicable P+
+Adaptable AD+
+Con ascensor
+Sin ascensor
+Portal automático
+Alarma antirrobo
+Seguridad y Vigilancia
+Todo amueblado
+Sin muebles
+Doble circulación interna
+Con refrigeración
+Con calefacción
+Caldera central
+Con aislación térmica
+Ventanas doble cristal
+Insonorizado
+Caja fuerte empotrada
+Admite profesionales
+Excluye profesionales
+Área deportes
+Juegos infantiles
+No se puede fumar
+Admite fumadores
+Admite mascotas
+No admite mascotas
+Admite parejas
+No admite parejas
+Admite menores
+No admite menores
+Admite visitas
+No admite visitas
+Incluye limpieza de áreas comunes
+Acceso a uso de electrodomésticos
+Sólo mujeres
+Sólo varones
+Ambiente jóvenes
+Ambiente estudiantes
+Ambiente tranquilo
+Posibilidad servicio lavandería
+Este
+Noreste
+Norte
+Noroeste
+Oeste
+Suroeste
+Sur
+Sureste
+Vista panorámica
+Vista al mar
+Vista a Monta~nas
+Vista al Lago
+Cerca de parque
+Zona turística
+Cerca del Metro
+En zona peatonal
+Zona muy comercial
+Vista al rio
+Acceso a Telefonía fija
+Red agua potable
+Red eléctrica
+Red gas
+Red cloaca y desagüe
+Agua de pozo
+Generador eléctrico propio
+Energía propia ecológica
+Gas en botellas
+Fosa séptica
+Acceso a Internet
+Agua de riego m3/a~no
+Balsa de agua litros
+Fibra Óptica
+A~no construcción 
+Ultima reforma en 
+Reformado a nuevo
+A reformar
+En ruinas
+Nuevo a estrenar
+En buen estado
+Obra Nueva
+Antisismico
+Fecha entrega
+Materiales primera calidad
+Máximo lujo
+Planos aprobados para m2
+Bancos
+Guarderías ni~nos
+Escuela básica
+Ense~nanza media
+Ense~nanza terciaria
+Medicina pública
+Medicina privada
+Urgencias médicas
+Residencias Ancianos/Dependientes
+Bomberos
+Policía
+Áreas  deportivas
+Talleres mecánicos
+Gasolineras
+Supermercados
+Restaurantes
+Bar-café
+Ocio nocturno
+Hospedaje
+Taxi
+Bus comarcal
+Ferrocarril a km
+Puerto Comercial a Km
+Aeropuerto Internacional a Km
+Aeropuerto Nacional a Km
+Autovía a Km
+Carretera Principal a Km
+Puerto deportivo a Km
+Playa a Km
+Pistas nieve a Km
+Campos golf a Km
+Código Postal
+Hipotecado
+Embargado
+Títulos perfectos
+Sólo posesión
+Escritura sin posesión
+Escritura y posesión
+Con ocupantes
+Con inquilinos
+Propiedad de Banco
+De Protección social
+Disfruta servidumbre
+Soporta servidumbre
+En sucesión hereditaria
+Permite segregación
+Bien cultural protegido
+% indiviso
+Certificado Energético: Consultar
+Riego instalado
+Generador Eólico
+Alambrado perimetral
+Corrales interiores
+Caseta herramientas
+Viviendas huéspedes
+Bebederos
+Granero
+Cobertizo animales
+Secaderos
+Almazara - Prensa aceite
+Cámara de frío
+Pista aterrizaje de tierra de metros
+Pista aterrizaje asfaltada  de metros
+Con maquinaria agrícola
+Corral de aves
+Manga sanitaria
+Invernaderos m2
+Piscifactoría m2
+Criadero aves m2
+Criadero conejos m2
+Área para hípica m2
+Vivienda cuidadores
+Coto de caza
+Arbolado m2
+Árboles
+Pinos
+Eucaliptus
+Encinas
+Robles
+Hayas
+Algarrobos
+Olivos 
+Manzana
+Pera
+Cereza
+Albaricoque
+Nectarina
+Melocotón
+Pomelo
+Naranjos
+Mandarina
+Limoneros
+Ciruelos
+Kiwi
+Aguacate
+Chirimoyas
+Almendros
+Casta~nos
+Nogales
+Vi~nedos
+Aptitud cultivo de
+Arroz
+Cereales
+Forrajes
+Calabaza
+Sandía
+Melón
+Patatas
+Maíz
+Verduras y hortalizas
+Flores
+Fresas
+Comentarios Adicionales
+Loft
+Monoambiente
+Dúplex
+Ätico
+Altitud

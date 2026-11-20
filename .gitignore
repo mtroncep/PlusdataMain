@@ -1,0 +1,17 @@
+.vs/
+.idea/
+.vscode/
+
+node_modules/
+
+nbproject/logs/
+*.log
+
+Thumbs.db
+Desktop.ini
+
+fotosPublicaciones/
+
+messaging-67753-a6c4365e67b6.json
+
+

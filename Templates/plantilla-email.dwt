@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Plantilla de Email</title>
+  <style>
+    body { margin: 0; padding: 0; background-color: #f4f4f4; }
+    table { border-collapse: collapse; }
+  </style>
+</head>
+<body>
+  <table width="100%" bgcolor="#f4f4f4" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <table width="487" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';">
+          <!-- Encabezado -->
+          <tr>
+            <td width="485" align="center" bgcolor="#ADADAD" style="padding: 20px; color: #ffffff; font-size: 24px;">
+              <img src="https://plusdata.info/imagenes/logoHomePlusdata.png" style="width: 30%; height: auto;"></img>
+            </td>
+          </tr>
+          <!-- Contenido -->
+          <tr>
+            <td style="padding: 20px; color: #333333; font-size: 16px;">
+<!-- TemplateBeginEditable name="texto_central" -->
+              <p align="center">Hola Marcelo ¿Como va eso?</p>
+              <p align="left">Este es un ejemplo de plantilla básica para email. Puedes personalizar colores, textos e imágenes.</p>
+<!-- TemplateEndEditable -->
+            </td>
+          <tr>
+            <td>
+<!-- TemplateBeginEditable name="zona_imagen" --><!-- TemplateEndEditable -->
+            <img src="../imagenes/globoTerraqueo.jpg" width="48" height="48" alt=""/></td>
+            
+          </tr>
+          <!-- Pie -->
+          <tr>
+            <td align="center" bgcolor="#eeeeee" style="padding: 10px; font-size: 12px; color: #666666;">
+              © 2025 Tu Empresa. Todos los derechos reservados.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr> 
+   </tr>
+  </table>
+</body>
+</html>

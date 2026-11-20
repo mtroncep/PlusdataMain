@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <title>Simulador Excel</title>
+
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@13.0.0/dist/handsontable.min.css">
+<script src="https://cdn.jsdelivr.net/npm/handsontable@13.0.0/dist/handsontable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hyperformula"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main.min.css" />
+  <link rel="stylesheet" href="../css/handsontable-custom-theme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-dark.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.js"></script> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.js"></script> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main-dark.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/hyperformula/dist/hyperformula.full.min.js"></script>  
+-->
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@16.1.1/dist/handsontable.full.min.js"></script> 
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main-dark.min.css" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/hyperformula/dist/hyperformula.full.min.js"></script>  
+  <link rel="stylesheet" href="../css/handsontable-custom-theme.css">
+    
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/handsontable.min.css" /> -->
+<style>
+    .filtro-header {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 11px;
+      margin-top: 2px;
+    }
+    #formInsert {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .campo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .campo label {
+      width: 100px; /* Ajustá según el largo de tus etiquetas */
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .campo input {
+      flex: 1;
+      padding: 1px;
+    }
+
+    .modal-header {
+      background: #f0f0f0;
+      padding: 5px;
+      cursor: move;
+      font-weight: bold;
+    }
+
+    #modalInsert {
+      position: fixed; /* o absolute */
+      top: 100px;
+      left: 100px;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      z-index: 9999; /* Muy alto para estar sobre todo */
+    }
+
+    #tablaExcel {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      position: relative;
+    }
+
+    .loader-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #333;
+      display: none; /* oculto por defecto */
+    }
+
+    .loader-icon {
+      border: 6px solid #ccc;
+      border-top: 6px solid #0078d4;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    #loader {
+      position: fixed;
+      z-index: 9999; /* asegurate que sea mayor que el de Handsontable */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+</style>
+</head>
+<body>
+  <h1 align="center">INMOBILIARIAS PARA MAILING</h1>
+    
+<!--  <div id="infoFiltrado"></div> -->
+  <div id="tablaExcel">
+      <div id="infoFiltrado"></div>
+      <button id="btnAgregarFila">➕ Agregar nueva fila</button>
+      <button id="btnLimpiarFiltros">🧹 Limpiar filtros</button>
+      <button id="btnCopiarCodigo">📌 Marcar mail present</button>
+      <button id="btnLimpiarCodigo">📌 Limpiar Mail present</button>
+      <button id="btnIrAPagina" onclick="history.go(-1);">🌐 Salir</button>
+  </div>
+
+  <div id="loader" class="loader-overlay">
+      <div class="loader-icon"></div>
+      <p>Procesando...</p>
+  </div>
+    
+
+    
+<div id="modalInsert" name="modalInsert" style="display:none; position:fixed; top:20%; left:30%; background:#FFDCC0; padding:20px; border:1px solid #ccc;">
+      <div id="modalHeader" class="modal-header">📝 Nuevo registro</div>
+      <form id="formInsert">
+          <div class="campo">
+            <label for="id">Id:</label>
+            <input name="id" id="id" readonly>
+          </div>
+          <div class="campo">
+            <label for="pais">País:</label>
+            <input name="pais">
+          </div>
+          <div class="campo">
+            <label for="tipoenvio">Tipo Envio:</label>
+            <input name="tipoenvio">
+          </div>
+          <div class="campo">
+            <label for="">Código postal:</label>
+            <input name="cpostal">
+          </div>
+          <div class="campo">
+            <label for="ciudad">Ciudad:</label>
+            <input name="ciudad">
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input name="email">
+          </div>
+          <div class="campo">
+            <label for="whatsapp">Whatsaap:</label>
+            <input name="whatsapp">
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input name="telefono">
+          </div>
+          <div class="campo">
+            <label for="">Sorteo:</label>
+            <input name="sorteo">
+          </div>
+          <div class="campo">
+            <label for="sorteo">Nombre:</label>
+            <input name="nombre">
+          </div>
+          <div class="campo">
+            <label for="actividad">Actividad:</label>
+            <input name="actividad">
+          </div>
+          <div class="campo">
+            <label for="web">Web:</label>
+            <input name="web">
+          </div>
+          <div class="campo">
+            <label for="direccion">Direccion:</label>
+            <input name="direccion">
+          </div>
+          <div class="campo">
+            <label for="otrotelefono">Otro teléfono:</label>
+            <input name="otrotelefono">
+          </div>
+          <div class="campo">
+            <label for="dato1">Dato 1:</label>
+            <input name="dato1">
+          </div>
+          <div class="campo">
+            <label for="dato2">Dato 2:</label>
+            <input name="dato2">
+          </div>
+        <!-- Agregá todos los campos que tengas -->
+        <button type="submit">Insertar</button>
+        <button type="button" id="cerrarModal">Cancelar</button>
+      </form>
+  </div>
+
+  <script>
+    function mostrarLoader() {
+      document.getElementById('loader').style.display = 'flex';
+    }
+
+    function ocultarLoader() {
+      document.getElementById('loader').style.display = 'none';
+    }
+
+
+    const modal = document.getElementById('modalInsert');
+    const header = document.getElementById('modalHeader');
+
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    header.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      offsetX = e.clientX - modal.offsetLeft;
+      offsetY = e.clientY - modal.offsetTop;
+    });
+
+    document.addEventListener('mousemove', function(e) {
+      if (isDragging) {
+        modal.style.left = (e.clientX - offsetX) + 'px';
+        modal.style.top = (e.clientY - offsetY) + 'px';
+      }
+    });
+
+    document.addEventListener('mouseup', function() {
+      isDragging = false;
+    });
+
+    document.getElementById('btnAgregarFila').addEventListener('click', () => {
+      const maxId = Math.max(0, ...datosOriginales.map(fila => Number(fila[0]) || 0));
+      const nuevoId = maxId + 1;
+      document.getElementById('id').value = nuevoId; // ← asigna el ID calculado
+      
+      document.getElementById('modalInsert').style.display = 'block';
+    });
+
+    document.getElementById('cerrarModal').addEventListener('click', () => {
+      document.getElementById('modalInsert').style.display = 'none';
+    });
+
+    let restauradas = [];
+    let datosOriginales = [];
+    let backupEliminadas = [];
+    let filtrando = 0;
+
+      mostrarLoader();
+
+      fetch('cargar.php')
+      .then(res => res.json())
+      .then(data => {
+        datosOriginales = data;
+        const container = document.getElementById('tablaExcel');
+        container.tabIndex = 0;
+        container.focus();
+        const nombresColumnas = ['(A) id', '(B) pais', '(C) envio', '(D) CP', '(E) ciudad', '(F) email', '(G) whatsapp', '(H) telefono', '(I) sorteo', '(J) nombre', '(K) actividad', '(L) web','(M) direccion', '(N) otrotelefono', '(O) dato1', '(P) dato2'];
+
+        const hot = new Handsontable(container, {
+          themeName: 'ht-theme-main',
+          filters: true,
+          data: data,  
+          colHeaders: function(index) {
+            return `
+              <div style="display:flex; flex-direction:column;">
+                <span style="font-weight:bold;">${nombresColumnas[index]}</span>
+              </div>
+            `;
+          },
+//          fixedRowsTop: 1,
+          rowHeaders: true,
+          contextMenu: true,
+          dropdownMenu: true,
+          autoColumnSize: false,
+          undo: true,
+          redo: true,
+          height: 600,
+          formulas: {
+            engine: HyperFormula
+          },
+          loading: true,
+          manualColumnResize: true,
+          hiddenRows: {
+              indicators: true
+          },
+          licenseKey: 'non-commercial-and-evaluation',
+          copyPaste: {
+            pasteMode: 'overwrite', // o 'shift_down'
+            rowsLimit: 10000,
+            columnsLimit: 100
+          },
+          columns: [
+            { readOnly: true, width: 70 },
+            { width: 70 }, // pais
+            { width: 85 }, // tipoenvio
+            { width: 70 }, // cpostal
+            { width: 150}, // ciudad
+            { width: 150}, // email
+            { width: 75 }, // whatsapp
+            { width: 100}, // telefono
+            { width: 60 }, // sorteo
+            { width: 150}, // nombre
+            { width: 75 }, // actividad
+            { width: 150}, // web
+            { width: 150}, // direccion
+            { width: 100}, // otrotelefono
+            { width: 75 }, // dato1
+            { width: 75 }  // dato2
+          ],
+            plugins: [
+             Handsontable.plugins.CopyPastePlugin,
+             Handsontable.plugins.ContextMenu,
+             Handsontable.plugins.DropdownMenu,
+            ],  
+            beforeFilter: function() {
+              document.getElementById('infoFiltrado').textContent = ' ';
+            },
+            afterFilter: function() {
+              ocultarLoader();
+              filtrando = 1;
+              const visibles = hot.countRows();
+              document.getElementById('infoFiltrado').textContent = `Filtrado: ${visibles}`;
+            },
+            afterChange: function(changes, source) {
+              const ignorar = ['loadData', 'UndoRedo.undo', 'setDataAtCell', 'copiarCodigo', 'limpiarCodigo'];
+
+              if (!ignorar.includes(source)) {
+                console.log('Source afterChange: ', source)
+                const cambios = changes.map(([fila, columna, oldVal, newVal]) => ({
+                  fila,
+                  columna,
+                  valor: newVal
+                }));
+
+                fetch('guardar.php', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ cambios, datos: hot.getData() })
+                  });
+              }
+            },
+            afterCreateRow: function(index, amount, source) {
+              const nuevaFila = hot.getSourceDataAtRow(index);
+//              console.log("Nueva fila: ", nuevaFila);
+            },
+            beforeRemoveRow: function(index, amount, physicalRows) {
+                physicalRows.forEach((fila, i) => {
+                    const datos = hot.getSourceDataAtRow(fila);
+                    const indicesEliminados = physicalRows.map(row => ({
+                    id: datos[0] // Suponiendo que la columna 0 es el ID
+                    }));
+                    fetch('borrar.php', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ eliminados: indicesEliminados })
+                  });
+                });
+            },
+            afterUndo: function(range) {
+              if (range.actionType === 'remove_row' && Array.isArray(range.data)) {
+                const columnas = ['id', 'pais', 'tipoenvio', 'cpostal', 'ciudad', 'email', 'whatsapp','telefono','sorteo','nombre','actividad','web','direccion','otrotelefono','dato1','dato2'];
+
+                const restauradas = range.data.map(fila => {
+                  return columnas.reduce((obj, key, i) => {
+                    obj[key] = fila[i];
+                    return obj;
+                  }, {});
+                });
+                  
+                fetch('restaurar.php', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ restauradas })
+                })
+                .then(res => res.ok ? console.log('Restauración registrada en backend') : console.error('Error al registrar'))
+                .catch(err => console.error('Error de conexión:', err));
+              }
+            },
+         });
+            ocultarLoader();
+
+            window.miTabla = hot;
+
+            function insertarFila(datosForm) {
+//              const tabla = hot.getSourceData();
+              // Validación básica
+/*
+            if (!datosForm.pais || !datosForm.nombre) {
+                alert('Faltan campos obligatorios: país y nombre');
+                return;
+              }
+*/
+              // Calcular nuevo ID
+              const maxId = Math.max(0, ...datosOriginales.map(fila => Number(fila[0]) || 0));
+              const nuevoId = maxId + 1;
+//              console.log("Nuevo Id: ",nuevoId);
+              // Crear nueva fila como array indexado
+              const nuevaFila = [
+                Number(datosForm.id),
+                datosForm.pais || '',
+                datosForm.tipoenvio || '',
+                datosForm.cpostal || '',
+                datosForm.ciudad || '',
+                datosForm.email || '',
+                datosForm.whatsapp || '',
+                datosForm.telefono || '',
+                datosForm.sorteo || '',
+                datosForm.nombre || '',
+                datosForm.actividad || '',
+                datosForm.web || '',
+                datosForm.direccion || '',
+                datosForm.otrotelefono || '',
+                datosForm.dato1 || '',
+                datosForm.dato2 || ''
+              ];
+
+//              console.log("Nueva fila: ",nuevaFila);
+
+            // Insertar y renderizar
+/*
+              const tabla = hot.getSourceData();
+              tabla.push(nuevaFila);
+              hot.render();
+                
+              const nuevaTabla = [...tabla, nuevaFila];
+              hot.loadData(nuevaTabla);
+*/
+              datosOriginales.push(nuevaFila);
+              hot.loadData(datosOriginales);
+
+//              const tablaUpdate = hot.getSourceData();
+//              console.log("Nueva act: ",tablaUpdate);
+              // Scroll a la nueva fila
+              const nuevaPos = hot.countRows() - 1;
+              hot.scrollViewportTo(nuevaPos, 0);
+              hot.selectCell(nuevaPos, 1); // por ejemplo, país
+              // Enviar a PHP
+              fetch('insert.php', {
+                method: 'POST',
+                body: JSON.stringify(datosForm),
+                headers: { 'Content-Type': 'application/json' }
+              })
+              .then(res => res.text())
+              .then(msg => alert('Insertado: ' + msg))
+              .catch(err => alert('Error: ' + err));
+            }
+
+            hot.addHook('afterSelectionEnd', (row, col, row2, col2) => {
+              const totalFilas = Math.abs(row2 - row) + 1;
+              const totalColumnas = Math.abs(col2 - col) + 1;
+              const totalCeldas = totalFilas * totalColumnas;
+              if (totalCeldas > 1){
+//                console.log(`Seleccionaste ${totalCeldas} celdas`);
+              }
+            });
+
+            document.getElementById('btnCopiarCodigo').addEventListener('click', () => {
+              if (filtrando) {
+                  console.log('Fias filtradas: ',hot.countRows());
+
+                  const hiddenPlugin = hot.getPlugin('hiddenRows');
+                  const cambios = [];
+                  
+                  mostrarLoader();
+                  hot.batch(() => {
+                      console.log('batch - IniCopiar...');
+                      const totalSourceRows = hot.getSourceData().length;
+
+                      for (let sourceRow = 0; sourceRow < totalSourceRows; sourceRow++) {
+                        const visualRow = hot.toVisualRow(sourceRow); // 👈 mapea al índice visual
+                        // Si la fila está oculta o filtrada, visualRow será null
+                        if (visualRow !== null && (!hiddenPlugin || !hiddenPlugin.isHidden(visualRow))) {
+                          const filaData = hot.getSourceDataAtRow(sourceRow);
+                          hot.setDataAtCell(visualRow, 2, 'ABC123', 'copiarCodigo');
+                          cambios.push({ id: filaData.id || filaData[0], fila: visualRow, columna: 2, valor: 'ABC123' });
+                          console.log('Visual:', visualRow, '→ Source:', sourceRow, '/', filaData.id || filaData[0]);
+                        }
+                      }
+                      console.log('batch - FinCopiar...');
+                  });
+
+
+                  fetch('guardar.php', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ cambios, datos: hot.getData() })
+                  })
+                    .finally(() => ocultarLoader())
+                    .then(res => res.json())
+                    .then(data => console.log('✅ Copia desde botón:', data));
+              }
+            });
+        
+            document.getElementById('btnLimpiarCodigo').addEventListener('click', () => {
+              if (filtrando) {
+                  let cantRows = hot.countRows();
+                  console.log('Fias filtradas: ', cantRows);
+
+                  const hiddenPlugin = hot.getPlugin('hiddenRows');
+                  const cambios = [];
+
+                  mostrarLoader();
+                  hot.batch(() => {
+                      console.log('batch - IniLimpiar...');
+                      const totalSourceRows = hot.getSourceData().length;
+
+                      for (let sourceRow = 0; sourceRow < totalSourceRows; sourceRow++) {
+                        const visualRow = hot.toVisualRow(sourceRow); // 👈 mapea al índice visual
+                        // Si la fila está oculta o filtrada, visualRow será null
+                        if (visualRow !== null && (!hiddenPlugin || !hiddenPlugin.isHidden(visualRow))) {
+                          const filaData = hot.getSourceDataAtRow(sourceRow);
+                          hot.setDataAtCell(visualRow, 2, '', 'copiarCodigo');
+                          cambios.push({ id: filaData.id || filaData[0], fila: visualRow, columna: 2, valor: '' });
+                          console.log('Visual:', visualRow, '→ Source:', sourceRow, '/', filaData.id || filaData[0]);
+                        }
+                      }
+                      console.log('batch - FinLimpiar...');
+                  });
+
+                  fetch('guardar.php', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ cambios, datos: hot.getData() })
+                  })
+                    .finally(() => ocultarLoader())
+                    .then(res => res.json())
+                    .then(data => console.log('✅ Limpieza desde botón:', data));
+              }
+            });
+        
+            document.getElementById('btnLimpiarFiltros').addEventListener('click', () => {
+              document.getElementById('infoFiltrado').textContent = ' ';
+              const plugin = hot.getPlugin('Filters');
+              plugin.clearConditions(); // borra condiciones
+              plugin.filter();          // aplica los cambios (sin filtros)
+              hot.render();             // refresca la tabla
+              filtrando = 0;
+            });
+
+            document.getElementById('formInsert').addEventListener('submit', function(e) {
+              e.preventDefault();
+                const form = document.querySelector('#formInsert');
+                const formData = new FormData(form);
+                const datosForm = Object.fromEntries(formData.entries());
+                insertarFila(datosForm);
+                document.getElementById('modalInsert').style.display = 'none';
+            });
+        });    
+
+//      });
+      
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 380px;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.captcha-box {
+  background: #f8f9fa;
+  border: 2px dashed #6c757d;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.captcha-box p {
+  font-weight: bold;
+  color: #444;
+  font-size: 15px;
+}
+
+.captcha-box input {
+  margin-bottom: 0;
+}
+
+#refresh-btn {
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+#refresh-btn:hover {
+  background: #e9ecef;
+}
+
+#captcha-feedback {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 1rem;
+  min-height: 18px;
+}
+
+.feedback-ok  { color: green; }
+.feedback-err { color: red;   }
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #3a0ca3;
+}

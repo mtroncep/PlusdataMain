@@ -1,0 +1,103 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Toda Argentina</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="content-language" content="es" />
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <body>
+        <!-- Contenedor donde se insertará el SVG -->
+        <div id="contenedor-svg"></div>
+
+    <script>
+        fetch("../svg/ArgentinaBuenosAiresC2.svg")
+            .then(r => r.text())
+            .then(svg => {
+                document.getElementById("contenedor-svg").innerHTML = svg;
+                // Seleccionamos TODAS las comarcas
+            
+                const nodos = document.querySelectorAll(".barrio");
+                let hayOnclicks = false;
+
+                nodos.forEach(n => {
+                    let code = n.getAttribute("onclick");
+
+                    // Detectar onclick REAL (que apunte a un .svg)
+                    const onclickReal = code && code.includes(".svg");
+
+                    // Si NO tiene onclick real → es nivel final (pero igual usa AJAX)
+                    if (!onclickReal) {
+                        n.addEventListener("click", function (e) {
+                            e.stopPropagation(); // ← LA CLAVE
+                            const nombreRegion = this.getAttribute("inkscape:label");
+//                            var nombreRegion = this.getElementsByTagName('title')[0].textContent;
+
+                            console.log("Barrio (final): " + nombreRegion);
+
+                            $.ajax({
+                                async: false,
+                                url: 'SVG_Barrios_AJAX.php',
+                                data: { barrio: nombreRegion },
+                                success: function(data) {
+                                    enviarDato(data);
+                                }
+                            });
+                        });
+                        return;
+                    }
+
+                    // Si tiene onclick real, este mapa navega
+                    hayOnclicks = true;
+
+                    // Reescribir ruta .svg → .html
+                    const archivo = code.match(/'(.*?)'/)[1];
+                    const base = archivo.replace(".svg", "");
+                    const nuevo = code.replace(archivo, base + ".html");
+                    n.setAttribute("onclick", nuevo);
+                });
+
+                // Solo inicializar regiones si este mapa realmente navega
+                if (hayOnclicks) {
+                    inicializarRegiones();
+                }
+            });
+
+        function inicializarRegiones() {
+            var test = document.querySelectorAll(".barrio");
+
+            for (var i = 0; i < test.length; i++) {
+
+                // Solo manejar onclicks REALES
+                let code = test[i].getAttribute("onclick");
+                if (!code || !code.includes(".svg")) continue;
+
+                test[i].addEventListener("click", function(e) {
+                    e.stopPropagation(); // ← LA OTRA CLAVE
+                    var nombreRegion = this.getAttribute('inkscape:label');
+                    console.log("Barrio 2: " + nombreRegion);
+
+                    $.ajax({
+                        async: false,
+                        url: 'SVG_Barrios_AJAX.php',
+                        data: { barrio: nombreRegion },
+                        success: function(data) {
+                            enviarDato(data);
+                        }
+                    });
+                });
+            }
+        }
+
+        function enviarDato(region) {
+            var datoParaEnviar = "ubic_barrio_id;" + region;
+            window.parent.postMessage(datoParaEnviar, window.location.origin);
+
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 610 675" id="Región 24" class="comarca" inkscape:label="Región 24" sodipodi:docname="ArgentinaPampeanaProvinciaBuenosAiresR24.svg"  style="cursor:pointer;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 5 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+
+  <path id="R24-1" class="municipio zonas" inkscape:label="Las Flores" d="m 377.2,433.8 -9.4,9.3 46.2,40 -28.1,29.3 53.4,47.1 3,-2 5.2,-5.3 2.4,-1 7.6,-6.9 5,-3 0.8,-1.3 2.7,-0.6 6.6,-5.1 4,-1.1 7,-3.4 1.9,0.2 5.7,-4.3 -1.6,-1.9 -0.9,-3.4 5.2,-4.9 1.6,-0.3 4.1,-4.7 4,-0.6 2.9,-1.6 2.9,0.5 4,-2.6 5.3,-2.2 5.8,-1.8 6.7,0.9 2.3,-2.2 5.4,-1.7 2.6,-3.3 3,-1.2 1.3,-1.8 3.5,-2.6 4,-0.3 1.9,-1.6 3.9,-0.5 2.5,-1.8 1.3,-2.1 0.5,-3.7 1.5,-4 5.2,-1.2 2.7,-3.8 -1,-1.1 24.5,-24.3 -11.7,-10.3 5.4,-5.1 -43.4,-40.1 -2,1.9 -15.9,-13.5 -4.6,4.1 -3.1,-3.3 0.3,-1 -9.8,-9.2 0.7,-1 -23.7,-23.1 0.8,-0.9 -7.3,-5.6 v 3.1 l 1.2,2.8 -3,2.2 -1.9,0.1 -1.6,2.5 -2.2,-0.9 -2.4,1 -2.5,4 0.6,7.3 -1.5,3.6 -1.6,2.3 -11.8,5.3 -2,2.6 -4.4,0.7 -1.9,0.7 -5.1,-0.1 -2.6,1.4 -3.8,0.1 -3.4,3.2 -5.4,-2.6 -4.4,2.9 -6.8,2.5 -5.6,-3.7 -2.6,0.6 -2.5,-1.2 -6.8,0.9 -4,2.1 -1.5,-1.5 -3.8,1.4 -0.3,2.2 -6.9,0.5 -3.3,2.6 -4.6,0.6 -3,3.4 -5.3,1.9 -0.2,1.7 -7.1,1.5 -1.1,-1.3 -4,1.3 -3.3,-0.8 -7.3,2.4 -6.6,-5.1 -1.7,-3.2 -3.9,-1.6 -2.6,0.8 z" />
+  <path id="R24-3" class="municipio zonas" inkscape:label="Roque Pérez" d="m 309.6,269 -14.5,-13.7 18.6,-18.8 11.3,10.2 18.6,-18.8 7.2,6.7 1.1,-1.1 7.6,6.7 v 0 l 23.4,-22 3.2,0.1 1.4,-1.6 3.4,5.7 2.1,-0.9 3.4,1.2 1.2,2 2.3,-1.9 1.6,0.1 0.4,-1.7 4.6,1.3 3.6,-3.6 3.6,1.9 1.5,5.6 -1.4,4.3 4,3.5 1.5,3.8 2.6,-3 1.8,3.7 3.5,-0.3 3.8,3.2 -1.4,5 3.8,-2.5 3.4,-2 5.4,3.8 3.8,4.4 6,-0.2 5.6,1.4 3.4,-0.5 4.2,1.8 1.5,3.4 4.2,-0.8 1.6,4.2 3.4,0.4 -0.2,3 6.4,0.9 2,-0.9 4,-0.3 1.8,2.3 1.2,-0.2 1.7,2.4 6,1.7 -0.1,1.1 6.8,2.7 1.3,-0.1 0.7,0.7 0.3,2.4 1.7,0.4 1.3,-0.9 2.5,5.2 -1,4.6 0.9,2.7 -9.1,5.5 1,1.1 -1.6,1.3 0.9,5.6 3.4,-0.5 0.3,4.1 -0.1,1.7 2.4,2.5 1.3,3.7 -2.1,5.4 -2,1.9 h -3.1 l -3.5,-1.7 -5.5,0.3 -0.5,1.6 -3.4,2.5 -1.2,-0.6 -2.6,1.3 -4.5,-1.1 -3.4,1.8 -2.4,0.9 -0.8,3.3 1.3,2.2 -0.8,2.2 1.3,2.8 1.5,2.1 2.1,1.6 v 3.1 l 1.2,2.8 -3,2.2 -1.9,0.1 -1.6,2.5 -2.2,-0.9 -2.4,1 -2.5,4 0.6,7.3 -1.5,3.6 -40,-35.4 -1.1,1.6 -10,-8.7 -1.2,0.9 -12,-10.8 -0.1,-0.1 16.8,-17.4 -1,-0.4 -2.1,1.8 -3.6,-0.1 -0.8,-1.5 -4.1,-0.8 -2.6,-2.3 -7.4,-2.2 -7.9,-5.6 -2.1,-0.7 -3.3,0.2 -3,-1 -2.3,-2.8 -1.8,-1.5 -3.1,-6 -4.9,-0.5 -3.2,2 -4.5,1.1 -1.8,-2.7 -4.3,0.1 -1.8,1.3 -7,-2.7 -1,2.9 -4.6,0.6 -1,-3.8 -1.5,0.8 -1.2,-0.8 -0.8,0.6 -4.3,-0.4 -2,-0.1 -0.6,3.2 -2.6,3.4 -3.1,0.7 -2.1,-1.7 -4.6,0.2 -3.2,-1.9 -1,2.4 -1.8,-0.3 -2.5,2 -3.1,-0.4 z" />
+  <path id="R24-4" class="municipio zonas" inkscape:label="Lobos" d="m 552.7,175.2 -6.7,7.1 h 0.1 l 23.2,20.3 -1.1,1.1 -30,30.4 -5.6,-1 -1.6,1.6 -4.8,-0.8 -3.9,2.2 -6.2,6.2 -5.5,-4.7 -8.5,8.3 -1,-0.7 -18.6,18.6 -6.4,-0.9 0.2,-3 -3.4,-0.4 -1.6,-4.2 -4.2,0.8 -1.5,-3.4 -4.2,-1.8 -3.4,0.5 -5.6,-1.4 -6,0.2 -3.8,-4.4 -5.4,-3.8 -3.4,2 -3.8,2.5 1.4,-5 -3.8,-3.2 -3.5,0.3 -1.8,-3.7 -2.6,3 -1.5,-3.8 -4,-3.5 1.4,-4.3 -1.5,-5.6 -3.6,-1.9 -3.6,3.6 -4.6,-1.3 -0.4,1.7 -1.6,-0.1 -2.3,1.9 -1.2,-2 -3.4,-1.2 -2.1,0.9 -3.4,-5.7 -1.4,1.6 -3.2,-0.1 -1.5,-0.4 -2.8,-0.2 -1.1,0.9 -6.4,-2.7 -3.1,-5.6 -0.1,-4.6 48.2,-27.8 0.8,0.6 3.1,-1.8 -0.4,-1.2 4.2,-3.5 25.4,-13.4 2.3,-9.7 6.2,5.7 21.5,-22.1 0.8,0.6 3.2,-2.7 14.6,-15 h 0.1 l 0.1,0.1 20.7,18.8 -5.2,5.3 21.6,19.5 z" />
+  <path id="R24-2" class="municipio zonas" inkscape:label="Saladillo" d="m 326.5,389.4 -2.1,0.3 -6.7,-0.1 -6.1,2.7 -1.4,-0.3 -2.2,1.9 -3.8,-1.2 -3.1,0.4 -4,3.2 -1.1,-1.2 -5.2,-0.4 -2,2 -1.5,3.2 -3.9,2.2 -0.2,3.9 -0.3,3 -2.2,2 -1.1,1.3 -3.8,-3.5 -4,-2.1 -1.8,1.4 -38.9,-37.2 -15.9,16.5 -26.7,-24.1 -0.9,-0.8 27.3,-27.5 15,13.1 3.6,-1.3 3.9,-0.1 1.1,-4.1 -1.9,-1.6 4.1,-3.6 3.1,-4.7 -5.3,1.5 0.6,-6.3 -1.7,-2.5 0.3,-2.4 3.6,-4.1 3.2,-3.3 1,-6.5 -4.7,-4.8 -0.1,-4 4.1,-3.1 0.6,-2.4 2,-0.1 18.6,-13 5.1,-0.8 2.8,-2.7 4.2,-0.6 2,2.6 4,1.5 3.6,0.5 3,2.1 h 4.1 l 2.5,-1.3 4.2,-0.8 2.4,-3.4 3.6,-1.1 3.1,0.4 2.5,-2 1.8,0.3 1,-2.4 3.2,1.9 4.6,-0.2 2.1,1.7 3.1,-0.7 2.6,-3.4 0.6,-3.2 2,0.1 4.3,0.4 0.8,-0.6 1.2,0.8 1.5,-0.8 1,3.8 4.6,-0.6 1,-2.9 7,2.7 1.8,-1.3 4.3,-0.1 1.8,2.7 4.5,-1.1 3.2,-2 4.9,0.5 3.1,6 1.8,1.5 2.3,2.8 3,1 3.3,-0.2 2.1,0.7 7.9,5.6 7.4,2.2 2.6,2.3 4.1,0.8 0.8,1.5 3.6,0.1 2.1,-1.8 1,0.4 -16.8,17.4 0.1,0.1 12,10.8 1.2,-0.9 10,8.7 1.1,-1.6 40,35.4 -1.6,2.3 -11.8,5.3 -2,2.6 -4.4,0.7 -1.9,0.7 -5.1,-0.1 -2.6,1.4 -3.8,0.1 -3.4,3.2 -5.4,-2.6 -4.4,2.9 -6.8,2.5 -5.6,-3.7 -2.6,0.6 -2.5,-1.2 -6.8,0.9 -4,2.1 -1.5,-1.5 -3.8,1.4 -0.3,2.2 -6.9,0.5 -3.3,2.6 -4.6,0.6 -3,3.4 -5.3,1.9 -0.2,1.7 -7.1,1.5 -1.1,-1.3 -4,1.3 -3.3,-0.8 -7.3,2.4 -6.6,-5.1 -1.7,-3.2 -3.8,-1.6 z" />
+  <path id="R24-6" class="municipio zonas" inkscape:label="General Alvear" d="m 60.7,483 h -0.1 l 33.7,30.9 11.8,-6.7 44.6,34.7 17.4,-17.9 12.7,10.4 42.7,-42.4 33,28 0.7,-1.3 1.3,-7.2 2.5,-6.4 30.6,-29.1 -5.5,-5.2 16.7,-16 20.7,19.2 12.5,-11.3 1.2,0.5 14.1,-13.7 5.5,4.8 10.9,-10.9 9.4,-9.3 -49.6,-44.6 -3.2,0.5 -6.7,-0.1 -6.1,2.7 -1.4,-0.3 -2.2,1.9 -3.8,-1.2 -3.1,0.4 -4,3.2 -1.1,-1.2 -5.2,-0.4 -2,2 -1.5,3.2 -3.9,2.2 -0.2,3.9 -0.3,3 -2.2,2 -1.1,1.3 -3.8,-3.5 -4,-2.1 -1.8,1.4 -38.9,-37.2 -15.9,16.5 -26.7,-24.1 -22.7,22.8 -7,5.1 0.2,2.4 -3.8,3.8 -2.3,-1.2 -4.6,2.5 0.7,4.7 -5.9,2.4 -3.5,5.4 -12,9.4 -5.6,4.5 1.9,4.1 -5.2,5.2 -6.2,3.1 -6.2,-2.3 -2.3,5 -2.7,2.4 -0.2,1.8 -2.2,1 -1.6,2.3 -3.7,1.3 -1.2,5.4 -2.2,1.5 -2.2,4.2 -5.1,4.9 -0.4,3.4 -3.5,1.9 -2.6,3.9 -4.6,2.3 -3.7,0.3 z" />
+  <path id="R24-5" class="municipio zonas" inkscape:label="Veinticinco de Mayo" d="m 183.6,219 -23.2,-20.3 -54.7,56.6 23.4,20.7 -22,21.9 -1.3,-0.6 -91.9,93 21.4,20.1 0.6,-0.9 23.1,20.6 15.9,-15 29.2,25.4 2.3,-5 6.2,2.3 6.2,-3.1 5.2,-5.2 -1.9,-4.1 5.6,-4.5 12,-9.4 3.5,-5.4 5.9,-2.4 -0.7,-4.7 4.6,-2.5 2.3,1.2 3.8,-3.8 -0.2,-2.4 7,-5.1 22.7,-22.8 -0.9,-0.8 27.3,-27.5 15,13.2 3.6,-1.3 3.9,-0.1 1.1,-4.1 -1.9,-1.6 4.1,-3.6 3.1,-4.7 -5.3,1.5 0.6,-6.3 -1.7,-2.5 0.3,-2.4 3.6,-4.1 3.2,-3.3 1,-6.5 -4.7,-4.8 -0.1,-4 4.1,-3.1 0.6,-2.4 2,-0.1 18.6,-13 5.1,-0.8 2.8,-2.7 4.2,-0.6 2,2.6 4,1.5 3.6,0.5 3,2.1 h 4.1 l 2.5,-1.3 4.2,-0.8 2.4,-3.4 3.6,-1.1 v 0 l 2.2,-8.9 -14.5,-13.7 18.6,-18.8 11.3,10.2 18.6,-18.8 7.2,6.7 1.1,-1.1 7.6,6.7 23.4,-22 -1.5,-0.4 -2.8,-0.2 -1.1,0.9 -6.4,-2.7 -3.1,-5.6 -0.1,-4.7 3.9,-6.2 -2.8,-3.4 1.6,-1.6 -2.8,-3.7 -1.9,-0.9 -1.2,-1.9 -2.1,-0.5 -2.1,-2.1 -1.2,1.7 -4.6,0.6 -4.9,3.5 -4.5,0.2 -2.9,3.6 -2.7,-1.1 -1.3,1.1 -0.8,4.5 -9.4,-4.1 -1.9,3 -1.5,-0.6 -2.1,1.2 -6.6,-8.1 -4.6,-0.5 0.5,-1.3 -1.4,-2.6 -2.8,-1.8 -4.8,1.2 -4.5,-0.5 -3.8,-1.7 -3,-6 -7.8,-0.8 -3.1,-6.1 -4.1,-3.1 -8.6,-3.2 -6,2.2 -5.8,3.3 -4.1,-0.1 -6.5,-5.4 -5.7,-2.9 z" />
+  <g id="textos" class="textos21">
+    <text class="textos21 tooltip tooltipR24-4" x="482.46744" y="208.10661" id="text4">Lobos</text>
+    <text class="textos21 tooltip tooltipR24-5" x="202.42162" y="247.25645" id="text5">Veinticinco de Mayo</text>
+    <text class="textos21 tooltip tooltipR24-3" x="461.9118" y="285.93719" id="text3">Roque Pérez</text>
+    <text class="textos21 tooltip tooltipR24-2" x="337.45709" y="341.39676" id="text2">Saladillo</text>
+    <text class="textos21 tooltip tooltipR24-6" x="220.3755" y="444.84897" id="text6">General Alvear</text>
+    <text class="textos21 tooltip tooltipR24-1" x="484.58276" y="452.02188" id="text1">Las Flores</text>
+  </g>
+  <rect width="123.06866" height="31.080559" x="475.2865" y="15.286499" ry="10.741412" class="rectangulos" id="rect" />
+  <text x="536.13818" y="36.800095" id="textR" class="textos21">Región 24</text>
+</svg>

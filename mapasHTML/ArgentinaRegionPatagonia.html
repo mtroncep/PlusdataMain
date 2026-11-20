@@ -1,0 +1,84 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Toda Argentina</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="content-language" content="es" />
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <body>
+        <!-- Contenedor donde se insertará el SVG -->
+        <div id="contenedor-svg"></div>
+
+<script>
+    fetch("../svg/ArgentinaRegionPatagonia.svg")
+        .then(r => r.text())
+        .then(svg => {
+            document.getElementById("contenedor-svg").innerHTML = svg;
+
+            // 🔥 1) LIMPIAR ONCLICKs HEREDADOS DEL SVG
+            document.querySelectorAll("g, path, rect, polygon").forEach(el => {
+                const code = el.getAttribute("onclick");
+                if (code && !el.classList.contains("provincia")) {
+                    el.setAttribute("onclick", "");
+                }
+            });
+
+            // 🔥 2) PROCESAR SOLO ONCLICKs REALES (los que navegan)
+            const nodos = document.querySelectorAll("[onclick]");
+
+            nodos.forEach(n => {
+                let code = n.getAttribute("onclick");
+
+                // Solo si realmente apunta a un .svg
+                if (code.includes(".svg") && !code.includes("/")) {
+
+                    const archivo = code.match(/'(.*?)'/)[1];
+                    const base = archivo.replace(".svg", "");
+                    const nuevo = code.replace(archivo, base + ".html");
+
+                    n.setAttribute("onclick", nuevo);
+                }
+            });
+
+            inicializarRegiones();
+        });
+
+    function inicializarRegiones() {
+        var test = document.querySelectorAll(".provincia");
+
+        for (var i = 0; i < test.length; i++) {
+
+            test[i].addEventListener("click", function(e) {
+                e.stopPropagation(); // 🛑 BLOQUEA EL SEGUNDO EVENTO
+
+                var region = this;
+                var nombreRegion = region.getAttribute('inkscape:label');
+
+                console.log("Provincia clickeada:", nombreRegion);
+
+                var parametros = { provincia: nombreRegion };
+
+                $.ajax({
+                    async: false,
+                    url: 'SVG_Provincias_AJAX.php',
+                    data: parametros,
+                    success: function(data) {
+                        enviarDato(data);
+                    }
+                });
+            });
+        }
+    }
+
+    function enviarDato(region) {
+        var datoParaEnviar = "ubic_provincia_id;" + region;
+        window.parent.postMessage(datoParaEnviar, window.location.origin);
+    }
+</script>
+
+    </body>
+</html>

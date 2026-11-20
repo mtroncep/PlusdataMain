@@ -1,0 +1,188 @@
+<!doctype html>
+<!--Quite a few clients strip your Doctype out, and some even apply their own. Many clients do honor your doctype and it can make things much easier if you can validate constantly against a Doctype.-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email template By Adobe Dreamweaver CC</title>
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<style type="text/css">
+body {
+	margin: 0;
+}
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+button {
+	width: 90%;
+}
+
+@media screen and (max-width:600px) {
+/*styling for objects with screen size less than 600px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100%;
+}
+.footer {
+	/* Footer has 2 columns each of 48% width */
+	height: 30px !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+table.responsiveImage {
+	/* Container for images in catalog */
+	height: auto !important;
+	max-width: 30% !important;
+	width: 30% !important;
+}
+table.responsiveContent {
+	/* Content that accompanies the content in the catalog */
+	height: auto !important;
+	max-width: 66% !important;
+	width: 66% !important;
+}
+.top {
+	/* Each Columnar table in the header */
+	height: auto !important;
+	max-width: 48% !important;
+	width: 48% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+}
+
+@media screen and (max-width:480px) {
+/*styling for objects with screen size less than 480px; */
+body, table, td, p, a, li, blockquote {
+	-webkit-text-size-adjust: none!important;
+	font-family: sans-serif;
+}
+table {
+	/* All tables are 100% width */
+	width: 100% !important;
+	border-style: none !important;
+}
+.footer {
+	/* Each footer column in this case should occupy 96% width  and 4% is allowed for email client padding*/
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveImage {
+	/* Container for each image now specifying full width */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.table.responsiveContent {
+	/* Content in catalog  occupying full width of cell */
+	height: auto !important;
+	max-width: 96% !important;
+	width: 96% !important;
+}
+.top {
+	/* Header columns occupying full width */
+	height: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+}
+.catalog {
+	margin-left: 0%!important;
+}
+button {
+	width: 90%!important;
+}
+}
+</style>
+</head>
+<body yahoo="yahoo">
+<table width="100%"  cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><table width="551"  align="center" cellpadding="0" cellspacing="0">
+          <!-- Main Wrapper Table with initial width set to 60opx -->
+          <tbody>
+            <tr>
+<!--
+            <td width="549"><table bgcolor="#d0cfcf" class="top" width="48%"  align="left" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 10px;">
+                  <tbody>
+                    <tr>
+                      <td height="72" style="font-size: 12px; color:#929292; text-align:center; font-family: sans-serif;">
+                          <img src="https://plusdata.info/imagenes/logoHomePlusdata.png" width="80%" height="auto" alt=""/></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table bgcolor="#d0cfcf" class="top" width="52%"  align="left" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 10px; text-align:right">
+                  <tbody>
+                    <tr>
+                      <td height="72" style="font-size: 25px; color:#000BFF; text-align:center; font-family: sans-serif;">
+                          <span id="fechaHoy"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr> 
+-->
+              <!-- Introduction area -->
+              <td><table width="100%"  align="left" cellpadding="0" cellspacing="0">
+                  <tr> 
+                    <!-- row container for TITLE/EMAIL THEME -->
+                    <td align="center" style="padding-bottom: 30px; font-size: 32px; font-weight: 300; line-height: 1.1em; color: black; font-family: Roboto, sans-serif;">
+                        <strong>{{tema}}</strong>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <!-- row container for Tagline -->
+                    <td align="center" style="padding-bottom: 30px; font-size: 18px; font-weight:300; color: black; font-family: Roboto, sans-serif; line-height: 1.1em;">
+                        <strong>{{comentarios}}</strong></td>
+                  </tr>
+                  <tr> 
+                    <!-- Row container for Intro/ Description -->
+                    <td style="font-size: 18px; color: #000000; text-align: justify; padding:10px 10px 0px 10px; font-family: Arial, sans-serif;">{{texto}}
+                    </td>
+                  </tr>
+                </table></td>
+            </tr>
+   <!--
+            <tr>
+              <td><table bgcolor="#d0cfcf" class="footer" width="100%"  align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td>
+                        <p align="center" style="font-size: 22px; font-weight:300; line-height: 0.8em; color: black; 
+                        font-family: helvetica, sans-serif;">Plusdata.info</p>
+                    </td>
+                  </tr>
+                </table>
+             </td>
+            </tr>
+-->
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    
+    <script>
+        // Obtener la fecha actual
+        const hoy = new Date();
+        const opcionesFormato = { year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = hoy.toLocaleDateString('es-ES', opcionesFormato); // 'es-AR' para Argentina
+
+        // Mostrar la fecha en el elemento con id="fecha-actual"
+        document.getElementById('fechaHoy').textContent = fechaFormateada;
+    </script>
+</body>
+</html>

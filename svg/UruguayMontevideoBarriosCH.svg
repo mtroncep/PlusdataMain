@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="Montevideo CH" class="localidad" inkscape:label="Montevideo CH" sodipodi:docname="UruguayMontevideoBarriosCH.svg" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="0.71980925" inkscape:cx="203.52614" inkscape:cy="288.27082" inkscape:current-layer="Montevideo CH" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <g id="zonas" style="cursor:pointer;fill:#f8f593;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="CH1" class="barrio" inkscape:label="Larrañaga" d="M 215.9,43.3 192.4,6.7 117.1,82.4 l 28.5,35.7 z">
+      <title id="title40">Larrañaga</title>
+    </path>
+    <path id="CH3" class="barrio" inkscape:label="Tres Cruces" d="m 117.1,82.4 -20.4,25.5 5.5,71.3 58.5,-34.1 -15.2,-27 z">
+      <title id="title34">Tres Cruces</title>
+    </path>
+    <path id="CH2" class="barrio" inkscape:label="La Blanqueada" d="m 215.9,43.3 41.3,72 -29.9,13 -66.6,16.8 -15.2,-27 z">
+      <title id="title39">La Blanqueada</title>
+    </path>
+    <path id="CH6" class="barrio" inkscape:label="Buceo" d="m 408.6,143.4 61.7,44.8 67.1,51.3 -16.1,17.3 v 35.4 l -13.7,15.9 -30.1,6.2 -34.7,-11.5 -16.4,13.3 -1.8,20.4 7.3,15.9 21,-0.9 -6.4,22.1 -19.2,12.4 -30.1,-8 -2.2,-17 -35.7,-108.2 -65.7,-54.3 z">
+      <title id="title27-9">Buceo</title>
+    </path>
+    <path id="CH5" class="barrio" inkscape:label="Villa Dolores" d="m 218.8,236 -0.4,37 82.2,-2.5 58.7,-17.6 -65.7,-54.3 z">
+      <title id="title38">Villa Dolores</title>
+    </path>
+    <path id="CH8" class="barrio" inkscape:label="Pocitos" d="m 107,260.2 10.3,130.8 44.3,17.3 11.7,-22.1 41.8,18.3 -6.3,22.7 57.8,25.1 0.1,-11.3 7.3,-29.2 24.6,-24.8 28.3,-20.4 -50.3,-53.7 24,-42.4 -82.2,2.5 -76.3,1.3 z">
+      <title id="title36">Pocitos</title>
+    </path>
+    <path id="CH9" class="barrio" inkscape:label="Punta Carretas" d="m 117.3,391 44.3,17.3 11.7,-22.1 41.8,18.3 -6.3,22.7 57.8,25.1 5.6,13.3 22.6,-6.2 -0.9,17.1 -10.5,7.7 -19.1,9.2 -24.4,9.2 -11,43.5 -29,2 -14.2,12.8 -14.8,14.5 -11.4,6 0.9,53.7 -15.8,33.2 -21.1,-35.8 1.8,-15.3 17.6,1.7 v -16.2 l -7.9,-12.8 -8,-103.4 z">
+      <title id="title35">Punta Carretas</title>
+    </path>
+    <path id="CH7" class="barrio" inkscape:label="La Mondiola" d="m 300.6,270.5 58.7,-17.6 35.7,108.2 2.2,17 h -15.5 l -19.2,9.7 -12.8,-16.8 -22.8,-4.4 -50.3,-53.7 z">
+      <title id="title32">La Mondiola</title>
+    </path>
+    <path id="CH4" class="barrio" inkscape:label="Parque Batlle" d="m 408.6,143.4 -68.6,-47.7 -36.4,-0.7 v 0 l -76.3,33.3 -66.6,16.8 -58.5,34.1 4.9,81 35.1,14.1 76.3,-1.3 0.4,-37 74.7,-37.4 z">
+      <title id="title37">Parque Batlle</title>
+    </path>
+  </g>
+  <g id="textos" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21px;font-family:Montserrat;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <rect width="151.17729" height="32.400867" x="422.08008" y="32.036564" ry="11.197709" style="fill:white" id="rect" />
+    <text x="496.83923" y="54.106499" id="text01">Municipio CH</text>
+    <text x="275.85916" y="31.10186" id="text1">Larrañaga</text>
+    <text x="330.43176" y="83.457909" id="text2">La Blanqueada</text>
+    <text x="47.92585" y="127.68161" id="text3">Tres</text>
+    <text x="223.74509" y="184.75945" id="text4">Parque Batlle</text>
+    <text x="434.56454" y="246.68858" id="text5">Buceo</text>
+    <text x="450.13406" y="418.89655" id="text6">La Mondiola</text>
+    <text x="283.57397" y="239.13618" id="text7">Villa</text>
+    <text x="204.62411" y="339.59323" id="text8">Pocitos</text>
+    <text x="184.91841" y="489.57904" id="text9">Punta</text>
+    <text x="282.22998" y="258.939" id="text10">Dolores</text>
+    <text x="47.663345" y="146.70294" id="text11">Cruces</text>
+    <text x="185.11787" y="508.55994" id="text12">Carretas</text>
+  </g>
+  <g id="flechas" style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none">
+    <path id="flecha3" d="m 219.2,23.6 0.2,2.2 0.2,2.2 1.5,-1.4 1.5,-1.4 -1.7,-0.8 z m -22.5,8.8 -0.2,-2.2 -0.2,-2.2 -1.5,1.4 -1.5,1.4 1.7,0.8 z m 22.8,-6.6 -22.8,4.3" />
+    <path id="flecha1" d="m 248.4,76 0.2,2.2 0.2,2.2 1.5,-1.4 1.5,-1.4 -1.7,-0.8 z m -22.5,8.8 -0.2,-2.2 -0.2,-2.2 -1.5,1.4 -1.5,1.4 1.7,0.8 z m 22.8,-6.6 -22.8,4.3" />
+    <path id="flecha" d="m 369.8,370.9 1.7,-0.9 1.7,-0.9 -1.6,-0.9 -1.6,-0.9 v 1.8 z m 18.5,26.9 -1.7,0.9 -1.7,0.9 1.6,0.9 1.6,0.9 v -1.8 z m -16.8,-27.9 15.3,28.6" />
+    <path id="flecha2" d="m 109.6,135.9 0.2,2.2 0.2,2.2 1.5,-1.4 1.5,-1.4 -1.7,-0.8 z m -22.5,8.8 -0.2,-2.2 -0.2,-2.2 -1.5,1.4 -1.5,1.4 1.7,0.8 z m 22.8,-6.6 -22.8,4.3" />
+  </g>
+</svg>

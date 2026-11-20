@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="610" height="675" viewBox="0 0 610 675" id="Andorra" class="pais" inkscape:label="Andorra" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" sodipodi:docname="AndorraPais.svg" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview inkscape:zoom="1.0179639" inkscape:cx="303.54711" inkscape:cy="329.57947" inkscape:current-layer="Andorra" id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" />
+  <defs id="defs1" />
+  <style id="estilomapasamarillo">
+.zonas {
+  cursor:pointer;
+  fill:#f8f593;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.30;
+}
+.zonagris {
+  cursor:pointer;
+  fill: #c5bfc4;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.30;
+}
+.textos21 {
+  cursor:pointer;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:21px;
+  font-family:Montserrat,sans-serif;
+  text-align:center;
+  writing-mode:lr-tb;
+  direction:ltr;
+  text-anchor:middle;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-width:0.03;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-dasharray:none;
+}
+.textos14 {
+  cursor:pointer;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:14px;
+  font-family:Montserrat,sans-serif;
+  text-align:center;
+  writing-mode:lr-tb;
+  direction:ltr;
+  text-anchor:middle;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:#000000;
+  stroke-width:0.03;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-dasharray:none;
+}
+.rectangulos {
+  cursor:pointer;
+  fill:white;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:black;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:0.3;
+}
+.flechas {
+  fill:black;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke:black;
+  stroke-dasharray:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  stroke-width:1;
+}
+</style>
+  <path id="path1" inkscape:label="Región Única" class="region zonas" onclick="window.location='AndorraParroquias.svg'" d="m 89.4,417.73998 -8.4,-11.3 -6.5,-27.7 -15.7,-8.4 h -8 l -9.5,10.2 -9.1,1.5 -16.8,6.9 -0.4,-11.7 7.3,-8.4 8,-27 32.4,-21.9 -2.9,-10.2 -8.7,-1.8 -17.5,-20.4 1.8,-10.6 16.8,-8 7.7,-15.3 -0.1,-9.9 10.1,3.7 7.7,-0.9 21.3,-8 10.4,-15.7 -4.7,-35.7 -2.9,-5.1 14.6,-19.7 0.8,-22.2 21.9,-2.9 14.6,17.5 22.6,-4.4 12.4,-12 9.1,5.5 14.9,0.4 3.6,-8 17.1,-2.6 10.6,5.1 4.6,-2 12.9,11.8 6.2,-1.5 3.6,14.9 13.5,19 h 12.8 l 9.1,14.6 8,0.3 5.8,-5.8 34.3,2.6 12.4,-7.3 26.6,8.7 2.6,10.2 14.2,5.8 19.3,-10.2 34.3,2.9 17.9,15.7 33.2,0.7 7.3,-7.3 2.6,14.6 -19.3,31.7 2.2,17.1 55.8,15.7 23.7,-1.1 14.9,16.6 -29.9,19.5 -20.4,-1.8 -11.8,7.7 -12.9,14.9 -2.9,7.7 -8.7,63.4 -8.4,7.7 -3.3,-2.2 1.5,35.3 -10.6,2.6 0.3,8.7 -25.1,14.3 -9.1,-6.9 -27.7,-0.4 -14.9,-24.3 -8.9,22.2 -3.4,13 1.5,13.8 -1.6,19.6 -7.3,11.7 -11.3,2.2 -21.9,-1.8 -8.7,10 -15.5,-5.1 -20.6,2.7 -13.5,-8.7 -21.5,15.7 -6.9,23.7 h -5.1 l -15.3,-19.3 h -11.6 l -2.9,6.9 1.8,9.1 -1.8,14.6 -8,4 -5.5,19 -18.6,-1.1 -19,8 -4.4,-3.3 -12,6.6 -8.7,-0.4 -18.2,-9.8 -27.7,0.7 -28.4,-5.5 -13.8,0.4 -14.6,-10.2 -3.6,-9.1 4.4,1.5 -7.3,-25.9 10.2,-7.7 -11.3,-10.9 1.5,-23.3 -13.1,-13.1 -24.8,-1.1 -13.5000004,-8.8 13.5000004,-13.5 40.5,-4 25,-17 14.1,-13.5 z">
+    <title id="title14">Andorra</title>
+  </path>
+  <rect width="151.17729" height="32.400867" x="199.08592" y="357.19543" ry="11.197709" id="rect" class="rectangulos" />
+  <text x="275.38858" y="381.1344" id="text01" class="textos21">Andorra</text>
+</svg>

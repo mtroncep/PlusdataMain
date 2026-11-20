@@ -1,0 +1,13 @@
+Venda
+Permuta
+Lloguer
+Lloguer amb opció de compra
+Lloguer d'habitacions
+Comparteix l'allotjament
+Subhasta
+Subhasta privada
+Apartament
+LoftNoShow
+DuplexNoSample
+MonoentornNoShow
+Casa

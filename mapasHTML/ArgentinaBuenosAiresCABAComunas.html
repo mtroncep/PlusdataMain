@@ -1,0 +1,99 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Toda Argentina</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="content-language" content="es" />
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <body>
+        <!-- Contenedor donde se insertará el SVG -->
+        <div id="contenedor-svg"></div>
+
+    <script>
+			fetch("../svg/ArgentinaBuenosAiresCABAComunas.svg")
+				.then(r => r.text())
+				.then(svg => {
+					document.getElementById("contenedor-svg").innerHTML = svg;
+
+            document.querySelectorAll("g, path, rect, polygon").forEach(el => {
+					const code = el.getAttribute("onclick");
+					if (code && !el.classList.contains("localidad")) {
+						el.setAttribute("onclick", "");
+					}
+				});
+
+            // 🔥 2) PROCESAR ONCLICKs REALES (renombrar .svg → .html)
+            const nodos = document.querySelectorAll("[onclick]");
+            nodos.forEach(n => {
+                let code = n.getAttribute("onclick");
+
+                // Solo si realmente apunta a un .svg
+                if (code && code.includes(".svg") && !code.includes("/")) {
+
+                    const archivo = code.match(/'(.*?)'/)[1];
+                    const base = archivo.replace(".svg", "");
+                    const nuevo = code.replace(archivo, base + ".html");
+
+                    n.setAttribute("onclick", nuevo);
+//                    console.log("Archivo renombrado: "+nuevo);
+                }
+            });
+
+            // 🔥 MUNICIPIO AUTOMÁTICO
+            var el = document.getElementById("Municipio de Buenos Aires");
+            var estaCompleto = el ? el.getAttribute('inkscape:label') : null;
+
+            if (estaCompleto !== null){
+                $.ajax({
+                  async: false,
+                  url: 'SVG_Municipios_AJAX.php',
+                  data: { municipio: estaCompleto },
+                  success: function(data) {
+                      enviarDatoMunicipio(data);
+                  }
+                });
+            }
+
+
+		    var test =document.querySelectorAll('.localidad');
+            for(var i=0;i<test.length;i++)
+             {
+                test[i].addEventListener("click", function()
+                {
+                   var comarca = document.getElementById(this.id);
+                   var nombreComarca = comarca.getAttribute('inkscape:label');
+//                   var nombreComarca = comarca.getElementsByTagName('title')[0].textContent;
+                   nombreComarca = nombreComarca.substr(nombreComarca.indexOf('-') + 2, 50);
+                   var parametros = {
+                      "localidad": nombreComarca
+                   };
+                   $.ajax({
+                      async: false,
+                      url: 'SVG_Localidades_AJAX.php',
+                      data: parametros,
+                      beforeSend: function(objeto) {},
+                      success: function(data) {
+                      enviarDato(data);
+                      }
+                   })
+                }); 
+             }
+            });
+
+            function enviarDato(comarca) { // Datos que quieres enviar, por ejemplo, el valor para el select 
+            var datoParaEnviar = "ubic_localidad_id;"+comarca; // Envía el dato al padre 
+            window.parent.postMessage(datoParaEnviar, window.location.origin); 
+            }
+
+            function enviarDatoMunicipio(municipio) { // Datos que quieres enviar, por ejemplo, el valor para el select 
+            var datoParaEnviar = "ubic_municipio_id;"+municipio; // Envía el dato al padre 
+            window.parent.postMessage(datoParaEnviar, window.location.origin); 
+            }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+/* CSS Document */
+
+    nav.navbar {
+        background-color: white !important; 
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #header{
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    iframe {
+        width: 100%;
+        border: none;
+        height: 100vh;
+    }
+
+    section {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    body {
+        font-family: "Arial", sans-serif;
+    }
+
+    h1 {
+        font-weight: normal;
+    }
+
+    #SECTOR_02A {
+        background-color: #f0f8ff; /* Azul muy claro */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_02C {
+        background-color: #fff0f5; /* Rosa palido */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_03 {
+        background-color: #f0fff0; /* Verdementa muy claro */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+    
+    #SECTOR_04 {
+        background-color: #f0f8ff; /* Repirar la clara azul */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_05 {
+        background-color: #fff0f5; /* Repite el rosa pálido */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_06 {
+        background-color: #f0fff0; /* Repite el verde menta */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_06A {
+        background-color: #F0F8FF ; /* Azul claro */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_07 {
+        background-color: #FFF0F5; /* Rosa palido */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_08 {
+        background-color: #F0FFF0; /* Verde menta */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_09 {
+        background-color: #F0F8FF; /* Verde menta */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_10 {
+        background-color: #FFF0F5; /* Azul claro */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_11 {
+        background-color: #F0F8FF; /* Azul muy claro, casi blanco */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    #SECTOR_13 {
+        background-color: #F0F8FF; /* Rosa palido */
+        padding: 5px; /* Agrega espacio dentro del div */
+    }
+
+    .invalid-feedback {
+        border-color: red; /* Cambia el color del borde */
+        box-shadow: 0 0 5px red; /* Añade sombra roja */
+    }

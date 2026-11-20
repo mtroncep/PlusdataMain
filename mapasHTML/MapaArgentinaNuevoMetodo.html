@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+<div id="contenedorSVG"></div>
+
+<script>
+fetch("../svg/ArgentinaPais.svg")
+    .then(r => r.text())
+    .then(svg => {
+        document.getElementById("contenedorSVG").innerHTML = svg;
+
+        // Ahora el SVG está dentro del HTML
+        // y podés usar fetch, eventos, DOM, TODO
+        inicializarMapa();
+    });
+
+function inicializarMapa() {
+    const regiones = document.querySelectorAll(".region");
+
+    regiones.forEach(r => {
+        r.addEventListener("click", () => {
+            const nombre = r.getAttribute("inkscape:label");
+
+            fetch("miPHP.php?region=" + nombre)
+                .then(r => r.json())
+                .then(data => console.log(data));
+        });
+    });
+}
+</script>
+</body>
+</html>

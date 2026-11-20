@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg viewBox="0 0 610 675" id="Región 06" inkscape:label="Región 06" class="comarca" sodipodi:docname="ArgentinaPampeanaProvinciaBuenosAiresMetropolitanaR6.svg" preserveAspectRatio="xMidYMid meet" inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="1.2222222" inkscape:cx="244.63636" inkscape:cy="482.31818" inkscape:current-layer="Región 06" />
+  <defs id="defs1" />
+  <style id="mapas.css"><![CDATA[
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+svg[viewBox="0 0 610 675"] { max-width: 610px; }
+
+/* Zonas */
+.zonas, .zonaroja, .zonagris, .zonaverde {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 0.30;
+}
+.zonas      { fill: #f8f593; }
+.zonaroja   { fill: red; }
+.zonagris   { fill: #c5bfc4; }
+.zonaverde  { fill: #319e4d; }
+
+/* Path: crecer y cambiar de color (CSS puro o con script) */
+.zonas {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .2s ease, fill .2s ease;
+}
+.zonas:hover,
+.zonas.hover {
+  transform: scale(1.25);
+  fill: #ffd700;
+}
+
+/* Textos: tamaño normal y tamaño en hover (--h) */
+.textos21, .textos14, .textos10, .textos9, .textos8 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  text-anchor: middle;
+}
+.textos21 { font-size: 21px; --h: 24px; }
+.textos14 { font-size: 14px; --h: 17px; }
+.textos10 { font-size: 10px; --h: 13px; }
+.textos9  { font-size: 9px;  --h: 12px; }
+.textos8  { font-size: 8px;  --h: 11px; }
+
+/* Tooltip siempre visible */
+.tooltip {
+  opacity: 1;
+  pointer-events: none;
+  fill: #000;
+  transition: font-size .25s ease;
+}
+
+/* Rectángulos */
+.rectangulos {
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Flechas */
+.flechas {
+  fill: black;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: black;
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+
+/* Lineas */
+.lineas {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: black;
+}
+
+/* Rect y flecha que además son .tooltip: recuperar su color y su transición */
+.rectangulos.tooltip { fill: white; transition: transform .25s ease; }
+.flechas.tooltip     { fill: black; transition: transform .25s ease; }
+
+/* Rect y flecha crecen en hover */
+.zonas:hover + .rectangulos,
+.zonas:hover + .flechas,
+.zonas:hover + .rectangulos + .flechas,
+.zonas:hover + .flechas + .rectangulos,
+.zonas.hover + .rectangulos,
+.zonas.hover + .flechas {
+  transform: scale(1.15);
+}
+
+.rectangulos.hover,
+.flechas.hover {
+  transform: scale(1.15);
+}
+
+/* Texto en hover: hasta 9 elementos .tooltip seguidos tras el path */
+.zonas:hover + .tooltip,
+.zonas:hover + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+.tooltip.hover {
+  font-size: var(--h);
+}
+
+/* Móvil */
+@media (max-width: 500px) {
+  .textos21 { font-size: 32px !important; --h: 37px; }
+  .textos14 { font-size: 24px !important; --h: 28px; }
+  .textos10 { font-size: 18px !important; --h: 21px; }
+  .textos9  { font-size: 16px !important; --h: 19px; }
+  .textos8  { font-size: 14px !important; --h: 17px; }
+
+  .textos8, .textos9, .textos10, .textos14, .textos21 {
+    dominant-baseline: central;
+    alignment-baseline: middle;
+  }
+
+  .zonas, .zonaroja, .zonagris, .zonaverde {
+    stroke-width: 0.80 !important;
+  }
+
+  .rectangulos.tooltip {
+    transform: scale(1.7, 1.8) !important;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* El hover debe llevar !important para ganar a los tamaños de arriba */
+  .zonas:hover + .tooltip,
+  .zonas:hover + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .zonas:hover + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip + .tooltip,
+  .tooltip.hover {
+    font-size: var(--h) !important;
+  }
+
+  .zonas:hover + .rectangulos,
+  .zonas:hover + .flechas + .rectangulos {
+    transform: scale(1.95, 2.05) !important;
+  }
+
+  .rectangulos.hover {
+    transform: scale(1.95, 2.05) !important;
+  }
+}
+]]></style>
+  <path id="R63" inkscape:label="San Fernando" class="municipio zonas" d="m 227,563.8 -6.1,-4.8 4.3,-2.7 3.5,-8.2 -1.4,-8.1 5.7,-13.7 -0.7,-3.6 14,-3.7 21.6,-18.8 1,-3.4 7.8,5.1 7.4,1.8 -0.2,2.8 4.4,2.4 5,5.4 10.9,5.5 4.9,0.8 -9,6.1 -9.1,5.8 -12.5,6.9 -25.8,14.3 -2.4,0.5 -1.7,1.9 -5.9,3 -1.4,2.7 -7.3,4.3 -3.5,0.5 z m -1.9,-512.6 -12.6,5 -17.1,0.9 -17,-2.6 -18.2,-6.3 -141.7,59.5 v 8.3 l 35.3,47.3 v 10.5 l 4.7,12.6 13.8,10.7 0.7,7.5 5.6,3.3 54.8,7.9 1.2,17.6 -4.3,14 -5.8,7.3 -7.1,5.6 1.8,9.3 -2.6,13.2 0.3,12.2 60.2,20.9 44.9,10.7 26.3,11.6 7.4,6.2 28.5,14.6 15.9,-3 6,1 0.4,-2.2 -5.9,-2.7 -8.1,-2.3 -7.7,-0.2 -0.7,-2.9 11.7,-1.4 10.3,1.3 12.1,-0.2 4.4,-3.6 1.6,-5.2 -2.9,-3.7 -0.3,-5.8 -4.1,-5.2 3.9,-2 -3.5,-1.9 3.7,-5.1 8.7,-1.1 7.8,0.9 5.5,4.2 10.2,4.2 5.5,0.2 12.1,-8.1 2,-6.4 3.3,-2.9 6.4,2.4 5.2,3.4 15.8,0.3 7.7,-3.7 3.7,-7.5 4.1,-6.7 3.2,-12.4 7.5,-18.3 7.2,-8.7 6.4,-9.7 2.9,-10.5 3.7,-5.9 2.3,-9 -3,-11.7 -5.4,-5.6 -7.2,-5.8 2.9,-11 5.7,-5.5 1,-9.2 1.5,-11.2 v -12.4 l 1.8,-6.2 0.7,-15 -1.1,-14 0.2,-9 -5.3,-4 1.9,-9.1 0.8,-16.8 4.9,-4.2 0.4,-11.2 1.5,-11.6 -1.4,-11.7 -6.1,-5.8 -13.7,-3 -7,3.5 -20.2,-6.7 -14,-4.5 -28.5,-3.7 -32.3,1.3 -10.6,5 -16.3,9.2 -26.5,6.8 -16.4,5.5 -21.9,2.8 z" />
+  <path id="f1" class="flechas tooltip tooltipR63" d="m 344.9 321 7.5 -5.3 -7.8 -6.3 z m 71.3 153.8 -7.5 5.3 7.8 6.3 z m -3.7 3 -64.1 -159.4 m -43.3 204.4 -1.7 -6.4 -5.2 5.3 z m 104.5 -37.5 1.7 6.4 5.2 -5.3 z m 1.1 3.2 L 304.2 519.8" />
+  <text x="510.98279" y="500.71246" id="textR63" class="textos21 tooltip tooltipR63">San Fernando</text>
+  <path id="R64" inkscape:label="Tigre" class="municipio zonas" d="m 224,608.3 2.1,-3.9 -1.5,-7.9 2.2,-11.7 1.7,-6 -2.2,-7.1 6.3,4.2 -2.2,-9.4 -9.3,-7.4 4.3,-2.7 3.5,-8.2 -1.4,-8.1 5.7,-13.7 -0.7,-3.6 14,-3.7 21.6,-18.8 1,-3.4 7.8,5.1 7.4,1.8 -0.2,2.8 4.4,2.4 5,5.4 10.9,5.5 1.1,-2.5 2.6,-0.9 -0.9,-5.6 4.9,-3.7 0.2,-6.2 3.1,-3.7 2.6,-1.9 -0.1,-2.7 -1.7,-2.4 0.7,-3.3 3.5,-0.5 2.9,2.4 2,-1.1 -0.1,-2.9 -3.7,-16.5 4.8,0.6 7.8,-2.1 4.6,-3.9 1.8,-4.7 -2.6,-9.2 7.3,-1.2 1,-7.7 4.7,-11.9 0.9,-12.8 -2.6,-7 -6.5,-13.3 -12,-16.9 -16.1,-16.6 -8.2,-4.5 -6,-1 -15.9,3 -28.5,-14.6 -7.4,-6.2 -26.3,-11.6 -44.9,-10.7 -2.6,3 -26,85.6 -6,6.3 -4.4,-4.8 -29,16.9 -2,3.3 16.2,9.3 -9.6,17.9 -7.5,0.3 6.6,4.4 -18.2,11.3 20.1,30.6 1.3,5.1 5.6,8 26.1,35.7 34,34.3 39.8,37.5 z" />
+  <text x="221.5936" y="456.1752" id="tooltipR64" class="textos21 tooltip tooltipR64">Tigre</text>
+  <path id="R62" inkscape:label="San Isidro" class="municipio zonas" d="m 295.7,597 0.6,1.1 -6.5,5.1 -1.6,-1.4 -14.7,14.8 -40.8,-40.8 -2.2,-8.9 3.5,-0.8 7.3,-4.3 1.4,-2.7 5.9,-3 1.7,-1.9 2.4,-0.5 25.8,-14.3 12.5,-6.9 9.1,-5.8 9,-6.1 3.8,0.3 5.5,0.7 2.4,1.9 -1.8,3.1 0.5,1.7 1.4,-0.5 0.2,-2.1 2.7,6.3 1.8,3.9 2.8,3.3 2.2,0.2 -2,4.4 3.4,-2.2 1.8,3.2 -1,2.2 0.3,1.4 4.4,1.3 6,5.8 0.5,3.7 2.9,3 -1.3,6.3 1.2,1.3 z" />
+  <text x="349.99353" y="557.7774" id="tooltipR62" class="textos21 tooltip tooltipR62">San Isidro</text>
+  <path id="R61" inkscape:label="Vicente López" class="municipio zonas" d="m 273.2,616.5 16,16.1 4.1,-5.1 3.7,-2.8 2.3,5 -1.5,0.8 2.4,3.1 2.2,6.7 11.1,17.2 3.3,3.9 9,-22.6 46.5,-23.9 -3.4,-3.7 -8.1,2 -5.7,-10.9 3.3,-3.3 -4.1,-7 -3.7,2.3 -2.9,-15.5 -2.6,-2.1 1.9,-6.5 -51.1,26.8 0.6,1.1 -6.5,5.1 -1.6,-1.4 z" />
+  <text x="380.50534" y="618.97308" id="tooltipR61" class="textos21 tooltip tooltipR61">Vicente López</text>
+  <rect class="rectangulos" id="rect" width="114.6444" height="29.039326" x="475.07733" y="15.077335" ry="10.035963" />
+  <text x="531.91956" y="35.570324" id="textR" class="textos21">Región 06</text>
+</svg>
