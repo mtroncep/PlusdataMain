@@ -34,7 +34,7 @@ require_once("conexion.php");
 //                echo "CambioTipoClave: ".$_SESSION['menuinicio'];
 //                return;
                 if ($_SESSION['tipoCambioClave'] === "olvido"){
-                    echo ('<script type="text/javascript">'."window.location.href = 'index.php'</script>");
+                    echo ('<script type="text/javascript">'."window.location.href = 'indexNew.php'</script>");
                 } else {
                     $menuinicio = $_SESSION['menuinicio'];
 //                    echo ('<script type="text/javascript">'."window.location.reload(true);</script>");
